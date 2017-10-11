@@ -17,13 +17,14 @@ public class PendudukController {
 	
 	@GetMapping("/penduduk")
 	public String responseTampilkanDataPenduduk(@RequestParam(value = "nik", required = true) String nik, Model model) {
-//		PendudukViewModel penduduk = pendudukService.getDataPendudukBerdasarkanNik(nik);
-//		if(penduduk != null) {
-//			model.addAttribute("penduduk", penduduk);
+		PendudukViewModel penduduk = pendudukService.getDataPendudukBerdasarkanNik(nik);
+		if(penduduk != null) {
+			model.addAttribute("penduduk", penduduk);
+			System.out.println(">>>>>>>>>>>>> "+penduduk.toString());
 			return "response-data-penduduk";
-//		}
-//		model.addAttribute("nik", nik);
-//		return "response-failed-data-penduduk";
+		}
+		model.addAttribute("nik", nik);
+		return "response-failed-data-penduduk";
 	}
 	
 }
