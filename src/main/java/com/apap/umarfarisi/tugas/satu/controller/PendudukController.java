@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.apap.umarfarisi.tugas.satu.model.PendudukViewModel;
@@ -25,6 +27,15 @@ public class PendudukController {
 		}
 		model.addAttribute("nik", nik);
 		return "response-failed-data-penduduk";
+	}
+	
+	@RequestMapping(value = "/penduduk/tambah" , method = RequestMethod.GET)
+	public String formTambahPenduduk(Model model) {
+//		return "form-tambah-penduduk";
+		
+		model.addAttribute("nik", "123456789098");
+		return "response-tambah-penduduk";
+		
 	}
 	
 }

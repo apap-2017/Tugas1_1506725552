@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tambah Penduduk</title>
+</head>
+<body>
+
+	<form action="penduduk/tambah" method="post">
+		<h3>Masukkan Nama</h3>
+		<input type="text" name="nama"/>
+		
+		<h3>Tempat Lahir</h3>
+		<input type="text" name="tempat_lahir"/>
+				
+		<h3>Tanggal Lahir</h3>
+		<input type="text" name="tanggal_lahir"/>
+				
+		<h3>Golongan Darah</h3>
+		<select name="golongan_darah">
+			<option value = "AB">AB</option>
+			<option value = "A">A</option>
+			<option value = "B">B</option>
+			<option value = "O">O</option>
+		</select>
+				
+		<h3>Agama</h3>
+		<input type="text" name="agama"/>
+				
+		<h3>Status Perkawinan</h3>
+		<input type="text" name="status_perkawinan"/>
+				
+		<h3>Pekerjaan</h3>
+		<input type="text" name="pekerjaan"/>
+				
+		<h3>Kewarganegaraan</h3>
+		<select name="is_wni">
+			<option value = "true">
+				WNI
+			</option>
+			<option value = "false">
+				WNA
+			</option>
+		</select>
+				
+		<h3>Status Kematian</h3>
+		<select name="is_wafat">
+			<option value = "false">Hidup</option>
+			<option value = "true">Meninggal</option>
+		</select>
+				
+		<h3>Id Keluarga</h3>
+		<input type="text" name="id_keluarga"/>
+	</form>
+
+</body>
+</html>
