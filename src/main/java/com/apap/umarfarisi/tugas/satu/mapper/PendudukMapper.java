@@ -2,6 +2,7 @@ package com.apap.umarfarisi.tugas.satu.mapper;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
@@ -17,17 +18,22 @@ public interface PendudukMapper {
 			+ "ka.alamat as alamat, ka.rt as rt, ka.rw as rw, khan.nama_kelurahan as namaKelurahan, ktan.nama_kecamatan as namaKecamatan, "
 			+ "k.nama_kota as namaKota, p.golongan_darah as golonganDarah, p.agama as agama, p.status_perkawinan as statusPerkawinan, p.pekerjaan as pekerjaan, p.is_wafat as statusKematian "
 			+ "from penduduk p, keluarga ka, kelurahan khan, kecamatan ktan, kota k "
-			+ "where p.id_keluarga = ka.id and ka.id_kelurahan = khan.id and khan.id_kecamatan = ktan.id and ktan.id_kota = k.id and p.nik = #{nik} ;")
+			+ "where p.id_keluarga = ka.id and ka.id_kelurahan = khan.id and khan.id_kecamatan = ktan.id and ktan.id_kota = k.id and p.nik = '#{nik}' ;")
 	public PendudukViewModel getPendudukView(@Param("nik") String nik);
 	
 	@Select("select nama, nik, jenis_kelamin as jenisKelamin, tempat_lahir as tempatLahir, tanggal_lahir as tanggalLahir, agama, pekerjaan, status_perkawinan as statusPerkawinan, status_dalam_keluarga as statusDalamKeluarga, is_wni as isWni "
-			+ "from penduduk where id_keluarga = #{id_keluarga};")
+			+ "from penduduk where id_keluarga = '#{id_keluarga}';")
 	public List<PendudukModel> getAllPendudukByIdKeluarga(@Param("id_keluarga") String idKeluarga);
 	
-	@Select("insert into penduduk (nik, nama, tempat_lahir, tanggal_lahir, golongan_darah, agama, status_perkawinan, pekerjaan, is_wni, is_wafat, id_keluarga) "
-			+ "VALUES (#{pendudukForm.nik}, #{pendudukForm.nama}, #{pendudukForm.tempatLahir}, #{pendudukForm.tanggalLahir}, "
-			+ "#{pendudukForm.golonganDarah}, #{pendudukForm.agama}, #{pendudukForm.statusPerkawinan}, #{pendudukForm.pekerjaan}, "
-			+ "#{pendudukForm.wni}, #{pendudukForm.wafat}, #{pendudukForm.idKeluarga});")
+	@Insert("insert into penduduk (nik, nama, tempat_lahir, tanggal_lahir, golongan_darah, agama, status_perkawinan, pekerjaan, is_wni, is_wafat, id_keluarga) "
+			+ "VALUES ('#{pendudukForm.nik}', '#{pendudukForm.nama}', '#{pendudukForm.tempatLahir}', '#{pendudukForm.tanggalLahir}', "
+			+ "'#{pendudukForm.golonganDarah}', '#{pendudukForm.agama}', '#{pendudukForm.statusPerkawinan}', '#{pendudukForm.pekerjaan}', "
+			+ "'#{pendudukForm.wni}', '#{pendudukForm.wafat}', '#{pendudukForm.idKeluarga}');")
 	public void addPenduduk(PendudukFormModel pendudukForm);
+	
+	
+	@Select("select nik from penduduk where nik like '${nik_pattern}%';")
+	public String getLatestPendudukInDomisili(@Param("nik_pattern") String nikPattern);
+	
 
 }

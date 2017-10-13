@@ -20,7 +20,7 @@ public class PendudukFormModel {
 	private String tempatLahir;
 	private int jenisKelamin;
 	private boolean isWni;
-	private String idKeluarga;
+	private int idKeluarga;
 	private String agama;
 	private String pekerjaan;
 	private String statusPerkawinan;
