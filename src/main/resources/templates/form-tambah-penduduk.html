@@ -5,18 +5,24 @@
 </head>
 <body>
 
-	<form action="penduduk/tambah" method="post">
+	<form action="/penduduk/tambah" method="post" th:model="pendudukForm">
 		<h3>Masukkan Nama</h3>
-		<input type="text" name="nama"/>
+		<input type="text" th:field="*{pendudukForm.nama}"/>
 		
 		<h3>Tempat Lahir</h3>
-		<input type="text" name="tempat_lahir"/>
+		<input type="text" th:field="*{pendudukForm.tempatLahir}"/>
 				
 		<h3>Tanggal Lahir</h3>
-		<input type="text" name="tanggal_lahir"/>
+		<input type="text" th:field="*{pendudukForm.tanggalLahir}"/>
+		
+		<h3>Jenis Kelamin</h3>
+		<select th:field="*{pendudukForm.jenisKelamin}">
+			<option value = "0" >Pria</option>
+			<option value ="1" >Wanita</option>
+		</select>
 				
 		<h3>Golongan Darah</h3>
-		<select name="golongan_darah">
+		<select th:field="*{pendudukForm.golonganDarah}">
 			<option value = "AB">AB</option>
 			<option value = "A">A</option>
 			<option value = "B">B</option>
@@ -24,16 +30,19 @@
 		</select>
 				
 		<h3>Agama</h3>
-		<input type="text" name="agama"/>
+		<input type="text" th:field="*{pendudukForm.agama}"/>
 				
 		<h3>Status Perkawinan</h3>
-		<input type="text" name="status_perkawinan"/>
+		<input type="text" th:field="*{pendudukForm.statusPerkawinan}"/>
+		
+		<h3>Status Dalam Keluarga</h3>
+		<input type="text" th:field="*{pendudukForm.statusDalamKeluarga}"/>
 				
 		<h3>Pekerjaan</h3>
-		<input type="text" name="pekerjaan"/>
+		<input type="text" th:field="*{pendudukForm.pekerjaan}"/>
 				
 		<h3>Kewarganegaraan</h3>
-		<select name="is_wni">
+		<select th:field="*{pendudukForm.wni}">
 			<option value = "true">
 				WNI
 			</option>
@@ -43,13 +52,18 @@
 		</select>
 				
 		<h3>Status Kematian</h3>
-		<select name="is_wafat">
+		<select th:field="*{pendudukForm.wafat}">
 			<option value = "false">Hidup</option>
 			<option value = "true">Meninggal</option>
 		</select>
 				
 		<h3>Id Keluarga</h3>
-		<input type="text" name="id_keluarga"/>
+		<input type="text" th:field="*{pendudukForm.idKeluarga}"/>
+		
+		<div>
+			<button type = "submit">SIMPAN</button>
+		</div>
+		
 	</form>
 
 </body>

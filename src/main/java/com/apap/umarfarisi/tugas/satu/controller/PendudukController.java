@@ -4,10 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.apap.umarfarisi.tugas.satu.model.PendudukFormModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukViewModel;
 import com.apap.umarfarisi.tugas.satu.service.PendudukService;
 
@@ -30,12 +32,17 @@ public class PendudukController {
 	}
 	
 	@RequestMapping(value = "/penduduk/tambah" , method = RequestMethod.GET)
-	public String formTambahPenduduk(Model model) {
-//		return "form-tambah-penduduk";
+	public String formTambahPenduduk(@ModelAttribute("pendudukForm") PendudukFormModel pendudukForm) {
+		return "form-tambah-penduduk";
 		
-		model.addAttribute("nik", "123456789098");
+	}
+	
+	@RequestMapping(value = "/penduduk/tambah" , method = RequestMethod.POST)
+	public String formTambahPenduduk(@ModelAttribute("pendudukForm") PendudukFormModel pendudukForm,
+			Model model) {
+//		pendudukService.addDataPenduduk(pendudukForm);
+		System.out.println(">>>>>>>>>>>>>>>>> " + pendudukForm.toString());
 		return "response-tambah-penduduk";
-		
 	}
 	
 }
