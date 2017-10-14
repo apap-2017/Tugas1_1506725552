@@ -23,14 +23,14 @@ public class PendudukService {
 	}
 	
 	public String addDataPenduduk(PendudukFormModel pendudukForm) {
-		String nik = generateNIK(pendudukForm);
+		String nik = generateFirstNIK(pendudukForm);
 		pendudukForm.setNik(nik);
 		pendudukMapper.addPenduduk(pendudukForm);
 		
 		return nik;
 	}
 
-	private String generateNIK(PendudukFormModel pendudukForm) {
+	private String generateFirstNIK(PendudukFormModel pendudukForm) {
 		String kodeKecamatan = kecamatanMapper.getKodeKecamatanByIdKeluarga(pendudukForm.getIdKeluarga());
 		String sixDigitFirst = kodeKecamatan.substring(0, kodeKecamatan.length() - 1);
 		
@@ -61,10 +61,42 @@ public class PendudukService {
 	}
 
 	public String updateDataPenduduk(String nik, PendudukFormModel pendudukForm) {
-		String newNik = generateNIK(pendudukForm);
+		String newNik = generateNIKFromOldNIK(pendudukForm, nik);
 		pendudukForm.setNik(newNik);
 		pendudukMapper.updatePenduduk(nik, pendudukForm);
 		return newNik;
 	}
+	
+	
+	private String generateNIKFromOldNIK(PendudukFormModel pendudukForm, String oldNik) {
+		String kodeKecamatan = kecamatanMapper.getKodeKecamatanByIdKeluarga(pendudukForm.getIdKeluarga());
+		String sixDigitFirst = kodeKecamatan.substring(0, kodeKecamatan.length() - 1);
+		
+		StringTokenizer tokenBirdDay = new StringTokenizer(pendudukForm.getTanggalLahir(), "-");
+		//2017-05-24
+		int year = Integer.parseInt(tokenBirdDay.nextToken().substring(2));
+		int month = Integer.parseInt(tokenBirdDay.nextToken());
+		int day = Integer.parseInt(tokenBirdDay.nextToken());
+		if(pendudukForm.getJenisKelamin() == 1) //1 means women
+			day += 40; 
+		
+		String sixDigitSecod = "" + String.format("%02d", day) + String.format("%02d", month) + String.format("%02d", year);
+		
+		String nik = sixDigitFirst + sixDigitSecod;
+		
+		//no nik change
+		if(oldNik.substring(0, nik.length()).trim().equals(nik.trim())) {
+			return oldNik;
+		}
+		
+		String lastNikInDomisili = pendudukMapper.getLatestPendudukInDomisili(nik);
+		if(lastNikInDomisili != null) {
+			int last = Integer.valueOf(lastNikInDomisili.substring(nik.length()));
+			last++;
+			return nik + String.format("%04d", last);
+		}
+		return nik + "0000";
+	}
+	
 	
 }
