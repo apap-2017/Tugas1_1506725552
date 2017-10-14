@@ -31,7 +31,7 @@ public interface PendudukMapper {
 	public void addPenduduk(@Param("pendudukForm") PendudukFormModel pendudukForm);
 	
 	
-	@Select("select nik from penduduk where nik like '${nik_pattern}%';")
+	@Select("select nik from penduduk where nik like '${nik_pattern}%' order by nik desc limit 1;")
 	public String getLatestPendudukInDomisili(@Param("nik_pattern") String nikPattern);
 	
 
