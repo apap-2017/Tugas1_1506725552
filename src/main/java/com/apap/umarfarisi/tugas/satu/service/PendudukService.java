@@ -53,5 +53,11 @@ public class PendudukService {
 		}
 		return nikTillDomisili + "0000";
 	}
+
+	public PendudukFormModel getDataPendudukForForm(String nik) {
+		
+		return pendudukMapper.getPendudukFrom(nik);
+
+	}
 	
 }

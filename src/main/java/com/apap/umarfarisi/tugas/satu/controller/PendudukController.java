@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -43,6 +44,21 @@ public class PendudukController {
 		String nik = pendudukService.addDataPenduduk(pendudukForm);
 		model.addAttribute("nik", nik);
 		return "response-tambah-penduduk";
+	}
+	
+	@RequestMapping(value = "/penduduk/ubah/{nik}", method = RequestMethod.GET)
+	public String formUpdatePenduduk(@PathVariable(value = "nik") String nik, Model model) {
+		
+		PendudukFormModel pendudukForm = pendudukService.getDataPendudukForForm(nik);
+		
+		if(pendudukForm != null) {
+			model.addAttribute("pendudukForm", pendudukForm);
+			return "form-ubah-penduduk";
+		}
+		
+		model.addAttribute("nik", nik);
+		return "not-found-data-penduduk-by-nik";
+		
 	}
 	
 }

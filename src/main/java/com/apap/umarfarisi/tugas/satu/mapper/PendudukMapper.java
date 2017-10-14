@@ -34,5 +34,12 @@ public interface PendudukMapper {
 	@Select("select nik from penduduk where nik like '${nik_pattern}%' order by nik desc limit 1;")
 	public String getLatestPendudukInDomisili(@Param("nik_pattern") String nikPattern);
 	
+	
+	@Select("select nik, nama, tempat_lahir as tempatLahir, tanggal_lahir as tanggalLahir, jenis_kelamin as jenisKelamin, "
+			+ "is_wni as wni, id_keluarga as idKeluarga, agama, pekerjaan, status_perkawinan as statusPerkawinan, "
+			+ "status_dalam_keluarga as statusDalamKeluarga, golongan_darah as golonganDarah, is_wafat as wafat "
+			+ "from penduduk where nik = #{nik}")
+	public PendudukFormModel getPendudukFrom(@Param("nik") String nik);
+	
 
 }
