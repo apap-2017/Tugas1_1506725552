@@ -25,11 +25,10 @@ public interface PendudukMapper {
 			+ "from penduduk where id_keluarga = '#{id_keluarga}';")
 	public List<PendudukModel> getAllPendudukByIdKeluarga(@Param("id_keluarga") String idKeluarga);
 	
-	@Insert("insert into penduduk (nik, nama, tempat_lahir, tanggal_lahir, golongan_darah, agama, status_perkawinan, pekerjaan, is_wni, is_wafat, id_keluarga) "
-			+ "VALUES ('#{pendudukForm.nik}', '#{pendudukForm.nama}', '#{pendudukForm.tempatLahir}', '#{pendudukForm.tanggalLahir}', "
-			+ "'#{pendudukForm.golonganDarah}', '#{pendudukForm.agama}', '#{pendudukForm.statusPerkawinan}', '#{pendudukForm.pekerjaan}', "
-			+ "'#{pendudukForm.wni}', '#{pendudukForm.wafat}', '#{pendudukForm.idKeluarga}');")
-	public void addPenduduk(PendudukFormModel pendudukForm);
+	@Insert("insert into penduduk (nik, nama, tempat_lahir, tanggal_lahir, jenis_kelamin, is_wni, id_keluarga, agama, pekerjaan, status_perkawinan, status_dalam_keluarga, golongan_darah, is_wafat) "
+			+ "VALUES ('${pendudukForm.nik}', '${pendudukForm.nama}', '${pendudukForm.tempatLahir}', '${pendudukForm.tanggalLahir}', ${pendudukForm.jenisKelamin}, ${pendudukForm.wni}, '${pendudukForm.idKeluarga}', "
+			+ "'${pendudukForm.agama}', '${pendudukForm.pekerjaan}', '${pendudukForm.statusPerkawinan}', '${pendudukForm.statusDalamKeluarga}', '${pendudukForm.golonganDarah}', ${pendudukForm.wafat});")
+	public void addPenduduk(@Param("pendudukForm") PendudukFormModel pendudukForm);
 	
 	
 	@Select("select nik from penduduk where nik like '${nik_pattern}%';")

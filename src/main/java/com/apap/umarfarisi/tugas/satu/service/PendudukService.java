@@ -21,10 +21,12 @@ public class PendudukService {
 	}
 	
 	public void addDataPenduduk(PendudukFormModel pendudukForm) {
+//		String nik = generateNIK(pendudukForm);
+//		pendudukForm.setNik(nik);
 		
-		String nik = generateNIK(pendudukForm);
-		
-//		pendudukMapper.addPenduduk(pendudukForm);
+		pendudukMapper.addPenduduk(new PendudukFormModel("1234", "1-1-1990", "tempatLahirAAAAA", 
+				1, true, 172, "Islam", "pekerjaan AAAAA", "status perkawinana AAAAA", "status dalam keluarga AAAAA",
+				"golongan darah AAAAA", "2017-05-14", true));
 	}
 
 	private String generateNIK(PendudukFormModel pendudukForm) {
