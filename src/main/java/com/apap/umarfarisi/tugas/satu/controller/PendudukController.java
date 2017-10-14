@@ -78,8 +78,8 @@ public class PendudukController {
 		model.addAttribute("nik", nik);
 		
 
-		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> nik " + pendudukForm.getNik());
-		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> is wafat " + pendudukForm.isWafat());
+		System.out.println("-1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> nik " + pendudukForm.getNik());
+		System.out.println("0 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> is wafat " + pendudukForm.isWafat());
 		
 		if(pendudukForm != null) {
 			model.addAttribute("status", pendudukForm.isWafat() ? "aktif" : "tidak aktif");
@@ -93,7 +93,8 @@ public class PendudukController {
 	@RequestMapping(value = "/penduduk/{nik}" , method = RequestMethod.POST)
 	public String formUbahStatusKematianPenduduk(Model model, @PathVariable(value = "nik") String nik) {
 		
-		//TODO update
+		boolean isWafat = pendudukService.updateDataStatusKematianPenduduk(nik);
+		model.addAttribute("status", isWafat ? "tidak aktif" : "aktif");
 		model.addAttribute("nik", nik);
 		return "response-ubah-status-kematian-penduduk";
 		

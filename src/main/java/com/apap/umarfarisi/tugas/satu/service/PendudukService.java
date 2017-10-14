@@ -104,6 +104,17 @@ public class PendudukService {
 		}
 		return nik + "0000";
 	}
+
+	public boolean updateDataStatusKematianPenduduk(String nik) {
+		PendudukFormModel pendudukForm = pendudukMapper.getPendudukFrom(nik); //impossible null
+		System.out.println("1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> isWafat: " + pendudukForm.isWafat());
+		pendudukForm.setWafat( !pendudukForm.isWafat() );
+		System.out.println("2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> isWafat: " + pendudukForm.isWafat());
+		
+		pendudukMapper.updatePenduduk(nik, pendudukForm);
+		
+		return pendudukForm.isWafat();
+	}
 	
 	
 }
