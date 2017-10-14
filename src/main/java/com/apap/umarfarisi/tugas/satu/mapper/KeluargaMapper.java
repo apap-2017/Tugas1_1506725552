@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 import com.apap.umarfarisi.tugas.satu.model.KeluargaDBModel;
+import com.apap.umarfarisi.tugas.satu.model.KeluargaFormModel;
 import com.apap.umarfarisi.tugas.satu.model.KeluargaViewModel;
 
 @Mapper
@@ -22,5 +23,10 @@ public interface KeluargaMapper {
 
 	@Select("select nomor_kk from keluarga where nomor_kk like '${nkk_pattern}%' order by nomor_kk desc limit 1")
 	public String getLatestNKK(@Param("nkk_pattern") String nkkPattern);
+
+	@Select("select k.alamat, k.rt, k.rw, kel.nama_kelurahan as kelurahan, kec.nama_kecamatan as kecamatan, kot.nama_kota as kota "
+			+ "from keluarga k, kelurahan kel, kecamatan kec, kota kot "
+			+ "where k.id_kelurahan = kel.id and kel.id_kecamatan = kec.id and kec.id_kota = kot.id and k.nomor_kk = ${nkk};")
+	public KeluargaFormModel getKeluargaForm(@Param("nkk") String nkk);
 	
 }

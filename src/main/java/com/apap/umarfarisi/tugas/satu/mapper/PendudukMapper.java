@@ -8,6 +8,7 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
+import com.apap.umarfarisi.tugas.satu.model.KeluargaFormModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukFormModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukViewModel;

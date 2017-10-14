@@ -101,5 +101,10 @@ public class KeluargaService {
 		
 		return nkk;
 	}
+
+	public KeluargaFormModel getDataKeluargaForForm(String nkk) {
+		KeluargaFormModel keluargaForm = keluargaMapper.getKeluargaForm(nkk);
+		return keluargaForm;
+	}
 	
 }

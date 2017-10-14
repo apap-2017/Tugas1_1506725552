@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -45,6 +46,24 @@ public class KeluargaController {
 		String nkk = keluargaService.addDataKeluarga(keluargaForm);
 		model.addAttribute("nkk", nkk);
 		return "response-tambah-keluarga";
+	}
+	
+	@RequestMapping(value = "/keluarga/ubah/{nkk}", method = RequestMethod.GET)
+	public String formUbahKeluarga(@PathVariable("nkk") String nkk, Model model) {
+		KeluargaFormModel keluargaForm = keluargaService.getDataKeluargaForForm(nkk);
+		if(keluargaForm != null) {
+			model.addAttribute("keluargaForm", keluargaForm);
+			return "form-ubah-keluarga";
+		}
+		model.addAttribute("nkk", nkk);
+		return "not-found-data-keluarga-by-nkk";
+		
+	}
+	
+	@RequestMapping(value = "/keluarga/ubah/{nkk}", method = RequestMethod.POST)
+	public String formUbahKeluarga(@PathVariable("nkk") String nkk ,@ModelAttribute("keluargaForm") KeluargaFormModel keluargaForm, Model model) {
+		model.addAttribute("nkk", nkk);
+		return "response-ubah-keluarga";
 	}
 	
 }
