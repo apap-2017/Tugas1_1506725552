@@ -60,10 +60,11 @@ public class PendudukService {
 
 	}
 
-	public void updateDataPenduduk(String nik, PendudukFormModel pendudukForm) {
-		
+	public String updateDataPenduduk(String nik, PendudukFormModel pendudukForm) {
+		String newNik = generateNIK(pendudukForm);
+		pendudukForm.setNik(newNik);
 		pendudukMapper.updatePenduduk(nik, pendudukForm);
-		
+		return newNik;
 	}
 	
 }
