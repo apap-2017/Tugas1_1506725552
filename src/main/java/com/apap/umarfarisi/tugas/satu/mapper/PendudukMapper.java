@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 import com.apap.umarfarisi.tugas.satu.model.PendudukFormModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukModel;
@@ -40,6 +41,12 @@ public interface PendudukMapper {
 			+ "status_dalam_keluarga as statusDalamKeluarga, golongan_darah as golonganDarah, is_wafat as wafat "
 			+ "from penduduk where nik = #{nik}")
 	public PendudukFormModel getPendudukFrom(@Param("nik") String nik);
+
+	@Update("update penduduk set nik = #{pendudukForm.nik}, nama = #{pendudukForm.nama}, tempat_lahir = #{pendudukForm.tempatLahir}, tanggal_lahir = #{pendudukForm.tanggalLahir}, jenis_kelamin = #{pendudukForm.jenisKelamin},"
+			+ "is_wni = #{pendudukForm.wni}, id_keluarga = #{pendudukForm.idKeluarga}, agama = #{pendudukForm.agama}, pekerjaan = #{pendudukForm.pekerjaan}, status_perkawinan = #{pendudukForm.statusPerkawinan}, "
+			+ "status_dalam_keluarga = #{pendudukForm.statusDalamKeluarga}, golongan_darah = #{pendudukForm.golonganDarah}, is_wafat = #{pendudukForm.wafat} "
+			+ "where nik = #{nik}")
+	public void updatePenduduk(@Param("nik") String nik, @Param("pendudukForm") PendudukFormModel pendudukForm);
 	
 
 }

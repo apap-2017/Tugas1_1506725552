@@ -59,5 +59,11 @@ public class PendudukService {
 		return pendudukMapper.getPendudukFrom(nik);
 
 	}
+
+	public void updateDataPenduduk(String nik, PendudukFormModel pendudukForm) {
+		
+		pendudukMapper.updatePenduduk(nik, pendudukForm);
+		
+	}
 	
 }
