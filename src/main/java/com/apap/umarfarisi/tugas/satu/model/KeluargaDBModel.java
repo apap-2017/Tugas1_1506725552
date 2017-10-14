@@ -1,25 +1,24 @@
 package com.apap.umarfarisi.tugas.satu.model;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-
-public class KeluargaModel {
+@ToString
+public class KeluargaDBModel {
 	
 	private long id;
-	private String nomorKk;
+	private String nkk;
 	private String alamat;
 	private String rt;
 	private String rw;
-	private long idKeluarahan;
+	private long idKelurahan;
 	private boolean isTidakBerlaku;
 	
 }

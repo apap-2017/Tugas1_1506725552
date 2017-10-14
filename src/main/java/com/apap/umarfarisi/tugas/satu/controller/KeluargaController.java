@@ -4,8 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.apap.umarfarisi.tugas.satu.model.KeluargaFormModel;
 import com.apap.umarfarisi.tugas.satu.model.KeluargaViewModel;
 import com.apap.umarfarisi.tugas.satu.service.KeluargaService;
 
@@ -29,4 +33,18 @@ public class KeluargaController {
 		model.addAttribute("nkk", nkk);		
 		return "response-failed-data-keluarga-berdasarkan-kk";
 	}
+	
+	@RequestMapping(value = "/keluarga/tambah")
+	public String formTambahKeluarga(@ModelAttribute("keluargaForm") KeluargaFormModel keluargaFrom) {
+		return "form-tambah-keluarga";
+	}
+	
+	
+	@RequestMapping(value = "/keluarga/tambah" , method = RequestMethod.POST)
+	public String formTambahKeluarga(@ModelAttribute("keluargaForm") KeluargaFormModel keluargaForm, Model model) {
+		String nkk = keluargaService.addDataKeluarga(keluargaForm);
+		model.addAttribute("nkk", nkk);
+		return "response-tambah-keluarga";
+	}
+	
 }

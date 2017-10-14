@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tambah Keluarga</title>
+</head>
+<body>
+
+	<form action="/keluarga/tambah" method="post" th:model = "keluargaForm">
+		<h3>Alamat</h3>
+		<input type="text" th:filed = "*{keluargaForm.alamat}"/>
+		<h3>RT</h3>
+		<input type="text" th:filed = "*{keluargaForm.rt}"/>
+		<h3>RW</h3>
+		<input type="text" th:filed = "*{keluargaForm.rw}"/>
+		<h3>Kelurahan/Desa</h3>
+		<input type="text" th:filed = "*{keluargaForm.kelurahan}"/>
+		<h3>Kecamatan</h3>
+		<input type="text" th:filed = "*{keluargaForm.kecamatan}"/>
+		<h3>Kota</h3>
+		<input type="text" th:filed = "*{keluargaForm.kota}"/>
+		<div>
+			<button type="submit">SIMPAN</button>
+		</div>
+	</form>
+
+</body>
+</html>
