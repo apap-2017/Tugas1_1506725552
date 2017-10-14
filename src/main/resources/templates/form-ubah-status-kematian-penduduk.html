@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ubah Status Kematian Penduduk</title>
+</head>
+<body>
+
+	<form th:action="@{/penduduk/} + ${nik}" method="post">
+		<h1>Ubah Status Kematian Penduduk</h1>
+		<h3 th:text = "'Merubah status penduduk dengan NIK ' + ${nik} + ' menjadi ' +${status}+ '.'" ></h3>
+		<div>
+			<button type="submit">Ubah</button>
+		</div>
+	</form>
+
+</body>
+</html>

@@ -70,4 +70,34 @@ public class PendudukController {
 		return "response-ubah-penduduk";
 	}
 	
+	@RequestMapping(value = "/penduduk/{nik}" , method = RequestMethod.GET)
+	public String formUbahStatusKematianPenduduk(@PathVariable(value = "nik") String nik, Model model) {
+		
+		PendudukFormModel pendudukForm = pendudukService.getDataPendudukForForm(nik);
+		
+		model.addAttribute("nik", nik);
+		
+
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> nik " + pendudukForm.getNik());
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> is wafat " + pendudukForm.isWafat());
+		
+		if(pendudukForm != null) {
+			model.addAttribute("status", pendudukForm.isWafat() ? "aktif" : "tidak aktif");
+			return "form-ubah-status-kematian-penduduk";
+		}
+		
+		return "not-found-data-penduduk-by-nik";
+		
+	}
+	
+	@RequestMapping(value = "/penduduk/{nik}" , method = RequestMethod.POST)
+	public String formUbahStatusKematianPenduduk(Model model, @PathVariable(value = "nik") String nik) {
+		
+		//TODO update
+		model.addAttribute("nik", nik);
+		return "response-ubah-status-kematian-penduduk";
+		
+	}
+	
+	
 }
