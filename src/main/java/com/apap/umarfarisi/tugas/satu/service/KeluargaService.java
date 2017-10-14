@@ -60,7 +60,7 @@ public class KeluargaService {
 		//TODO VALIDATION FORM , it is possible idKelurahan null which is not exit
 		
 		keluargaDB.setIdKelurahan(idKelurahan);
-		keluargaDB.setNkk(generateNKK(keluargaForm));
+		keluargaDB.setNkk(generateFirstNKK(keluargaForm));
 		keluargaDB.setRt(keluargaForm.getRt());
 		keluargaDB.setRw(keluargaForm.getRw());
 		keluargaDB.setTidakBerlaku(false);
@@ -70,7 +70,7 @@ public class KeluargaService {
 		return keluargaDB.getNkk();
 	}
 
-	private String generateNKK(KeluargaFormModel keluargaForm) {
+	private String generateFirstNKK(KeluargaFormModel keluargaForm) {
 		
 		//create first 6 digit
 		String kodeKecamatan = kecamatanMapper.getKodeKecamatan(keluargaForm.getKecamatan(), keluargaForm.getKota());
@@ -109,27 +109,51 @@ public class KeluargaService {
 
 	public String updateDataKeluarga(String nkk, KeluargaFormModel keluargaForm) {
 		
-		KeluargaDBModel keluargaDB = buildKeluargaDbFromKeluargaForm(keluargaForm);
-		
-		System.out.println("?????????????????????????????????? "+keluargaDB.toString());
-		
-		keluargaMapper.updateKeluarga(nkk, keluargaDB);
-		
-		//return newNkk from generate nkk
-		return keluargaDB.getNkk();
-	}
-	
-	private KeluargaDBModel buildKeluargaDbFromKeluargaForm(KeluargaFormModel keluargaForm) {
 		KeluargaDBModel keluargaDB = new KeluargaDBModel();
 		keluargaDB.setAlamat(keluargaForm.getAlamat());
 		Long idKelurahan = kelurahanMappper.getIdKelurahan(keluargaForm.getKota(), keluargaForm.getKecamatan(), keluargaForm.getKelurahan());
 		//TODO VALIDATION FORM , it is possible idKelurahan null which is not exit
 		keluargaDB.setIdKelurahan(idKelurahan);
-		keluargaDB.setNkk(generateNKK(keluargaForm));
+		keluargaDB.setNkk(generateFromOldNKK(keluargaForm, nkk));
 		keluargaDB.setRt(keluargaForm.getRt());
 		keluargaDB.setRw(keluargaForm.getRw());
 		keluargaDB.setTidakBerlaku(false);
-		return keluargaDB;
+
+		keluargaMapper.updateKeluarga(nkk, keluargaDB);
+		
+		//return newNkk from generate nkk
+		return keluargaDB.getNkk();
+	}
+
+	private String generateFromOldNKK(KeluargaFormModel keluargaForm, String oldNkk) {
+		//create first 6 digit
+		String kodeKecamatan = kecamatanMapper.getKodeKecamatan(keluargaForm.getKecamatan(), keluargaForm.getKota());
+		String sixDigitFirst = kodeKecamatan.substring(0, kodeKecamatan.length() - 1);
+		
+		//get second 6 digit
+		String sixDigitSecond = oldNkk.substring(7, 13);
+		
+		//uncomplete nkk which lack of 4 digit last
+		String nkk = sixDigitFirst + sixDigitSecond;
+		
+		//no nkk change
+		if(oldNkk.substring(0, 13).trim().equals(nkk.trim())) {
+			return oldNkk;
+		}
+		
+		//create last 4 digit
+		String lastNkk = keluargaMapper.getLatestNKK(nkk);
+		int order = 0;
+		
+		if(lastNkk != null) {
+			order = Integer.valueOf(lastNkk.substring(nkk.length()));
+			order++;
+		}
+		
+		//complete nkk
+		nkk += String.format("%04d", order);
+		
+		return nkk;
 	}
 	
 }
