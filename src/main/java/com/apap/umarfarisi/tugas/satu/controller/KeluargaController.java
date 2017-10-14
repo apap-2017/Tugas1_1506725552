@@ -62,7 +62,10 @@ public class KeluargaController {
 	
 	@RequestMapping(value = "/keluarga/ubah/{nkk}", method = RequestMethod.POST)
 	public String formUbahKeluarga(@PathVariable("nkk") String nkk ,@ModelAttribute("keluargaForm") KeluargaFormModel keluargaForm, Model model) {
-		model.addAttribute("nkk", nkk);
+		
+		String newNkk = keluargaService.updateDataKeluarga(nkk, keluargaForm);
+		
+		model.addAttribute("nkk", newNkk);
 		return "response-ubah-keluarga";
 	}
 	

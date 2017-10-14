@@ -4,6 +4,7 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 import com.apap.umarfarisi.tugas.satu.model.KeluargaDBModel;
 import com.apap.umarfarisi.tugas.satu.model.KeluargaFormModel;
@@ -28,5 +29,10 @@ public interface KeluargaMapper {
 			+ "from keluarga k, kelurahan kel, kecamatan kec, kota kot "
 			+ "where k.id_kelurahan = kel.id and kel.id_kecamatan = kec.id and kec.id_kota = kot.id and k.nomor_kk = ${nkk};")
 	public KeluargaFormModel getKeluargaForm(@Param("nkk") String nkk);
+
+	@Update("update keluarga set nomor_kk = #{keluargaDB.nkk}, alamat = #{keluargaDB.alamat}, rt = #{keluargaDB.rt}, "
+			+ "rw = #{keluargaDB.rw}, id_kelurahan = #{keluargaDB.idKelurahan}, is_tidak_berlaku = #{keluargaDB.tidakBerlaku} "
+			+ "where nomor_kk = #{nkk}")
+	public void updateKeluarga(@Param("nkk") String nkk, @Param("keluargaDB") KeluargaDBModel keluargaDB);
 	
 }

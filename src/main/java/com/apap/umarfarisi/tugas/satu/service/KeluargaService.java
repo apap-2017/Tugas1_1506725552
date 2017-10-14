@@ -106,5 +106,30 @@ public class KeluargaService {
 		KeluargaFormModel keluargaForm = keluargaMapper.getKeluargaForm(nkk);
 		return keluargaForm;
 	}
+
+	public String updateDataKeluarga(String nkk, KeluargaFormModel keluargaForm) {
+		
+		KeluargaDBModel keluargaDB = buildKeluargaDbFromKeluargaForm(keluargaForm);
+		
+		System.out.println("?????????????????????????????????? "+keluargaDB.toString());
+		
+		keluargaMapper.updateKeluarga(nkk, keluargaDB);
+		
+		//return newNkk from generate nkk
+		return keluargaDB.getNkk();
+	}
+	
+	private KeluargaDBModel buildKeluargaDbFromKeluargaForm(KeluargaFormModel keluargaForm) {
+		KeluargaDBModel keluargaDB = new KeluargaDBModel();
+		keluargaDB.setAlamat(keluargaForm.getAlamat());
+		Long idKelurahan = kelurahanMappper.getIdKelurahan(keluargaForm.getKota(), keluargaForm.getKecamatan(), keluargaForm.getKelurahan());
+		//TODO VALIDATION FORM , it is possible idKelurahan null which is not exit
+		keluargaDB.setIdKelurahan(idKelurahan);
+		keluargaDB.setNkk(generateNKK(keluargaForm));
+		keluargaDB.setRt(keluargaForm.getRt());
+		keluargaDB.setRw(keluargaForm.getRw());
+		keluargaDB.setTidakBerlaku(false);
+		return keluargaDB;
+	}
 	
 }

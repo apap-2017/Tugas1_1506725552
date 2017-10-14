@@ -5,7 +5,7 @@
 </head>
 <body>
 
-	<form th:action="@{/keluarga/} + ${nkk}" method="post" th:model = "keluargaForm">
+	<form th:action="@{/keluarga/ubah/} + ${nkk}" method="post" th:model = "keluargaForm">
 		<h3>Alamat</h3>
 		<input type="text" th:field="*{keluargaForm.alamat}"/>
 		<h3>RT</h3>
