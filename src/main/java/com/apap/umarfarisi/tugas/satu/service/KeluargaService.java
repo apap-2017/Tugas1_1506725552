@@ -53,7 +53,23 @@ public class KeluargaService {
 		
 		KeluargaDBModel keluargaDB = new KeluargaDBModel();
 		keluargaDB.setAlamat(keluargaForm.getAlamat());
-		keluargaDB.setIdKelurahan(kelurahanMappper.getIdKelurahan(keluargaForm.getKota(), keluargaForm.getKecamatan(), keluargaForm.getKelurahan()));
+		
+
+		System.out.println("NNNNNNNNUUUUUUUUUUUULLLLLLLLLLLL: kelurahan mapper " + kelurahanMappper);
+		System.out.println("NNNNNNNNUUUUUUUUUUUULLLLLLLLLLLL: kota " + keluargaForm.getKota());
+		System.out.println("NNNNNNNNUUUUUUUUUUUULLLLLLLLLLLL: kecamatan " + keluargaForm.getKecamatan());
+		System.out.println("NNNNNNNNUUUUUUUUUUUULLLLLLLLLLLL: kelurahan " + keluargaForm.getKelurahan());
+		
+		Long id = kelurahanMappper.getIdKelurahan(keluargaForm.getKota(), keluargaForm.getKecamatan(), keluargaForm.getKelurahan());
+		
+
+		System.out.println("NNNNNNNNUUUUUUUUUUUULLLLLLLLLLLL: id " + id);
+		
+		long idKelurahan = id;
+		
+		
+		
+		keluargaDB.setIdKelurahan(idKelurahan);
 		keluargaDB.setNkk(generateNKK(keluargaForm));
 		keluargaDB.setRt(keluargaForm.getRt());
 		keluargaDB.setRw(keluargaForm.getRw());
@@ -70,6 +86,8 @@ public class KeluargaService {
 		String kodeKecamatan = kecamatanMapper.getKodeKecamatan(keluargaForm.getKecamatan(), keluargaForm.getKota());
 		String sixDigitFirst = kodeKecamatan.substring(0, kodeKecamatan.length() - 1);
 		
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FIRST");
+		
 		//create second 6 digit
 		//get KK created date
 		Calendar calendar = new GregorianCalendar();
@@ -79,18 +97,31 @@ public class KeluargaService {
 		int year = Integer.valueOf(String.valueOf(calendar.get(Calendar.YEAR)).substring(2));
 		String sixDigitSecond = String.format("%02d", day) + String.format("%02d", month) + String.format("%02d", year);
 		
+
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SCOND");
+		
+		//uncomplete nkk which lack of 4 digit last
 		String nkk = sixDigitFirst + sixDigitSecond;
 		
-		String lastNkk = keluargaMapper.getLatestNKK(nkk);
+
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> THIRD");
 		
 		//create last 4 digit
+		String lastNkk = keluargaMapper.getLatestNKK(nkk);
 		int order = 0;
 		if(lastNkk != null) {
 			order = Integer.valueOf(lastNkk.substring(nkk.length()));
 			order++;
 		}
 		
-		nkk += String.format("%04", order);
+
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOURTH "+order);
+		
+		//complete nkk
+		nkk += String.format("%04d", order);
+		
+
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FIVE");
 		
 		return nkk;
 	}

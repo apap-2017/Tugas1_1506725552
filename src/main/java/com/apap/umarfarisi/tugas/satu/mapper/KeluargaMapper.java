@@ -20,7 +20,7 @@ public interface KeluargaMapper {
 			+ "values (#{keluarga.nkk},#{keluarga.alamat},#{keluarga.rt},#{keluarga.rw},#{keluarga.idKelurahan},#{keluarga.isTidakBerlaku})")
 	public void addDataKeluarga(@Param("keluarga") KeluargaDBModel keluarga);
 
-	@Select("select nkk from keluarga where nkk like '${nkk_pattern}%' order by nkk desc limit 1")
+	@Select("select nomor_kk from keluarga where nomor_kk like '${nkk_pattern}%' order by nomor_kk desc limit 1")
 	public String getLatestNKK(@Param("nkk_pattern") String nkkPattern);
 	
 }

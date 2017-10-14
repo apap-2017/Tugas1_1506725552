@@ -14,7 +14,7 @@ public interface KecamatanMapper {
 	
 	@Select("select kec.kode_kecamatan "
 			+ "from kecamatan kec, kota kot "
-			+ "where kec.id_kota = kot.id_kota and kec.nama_kecamatan = #{nama_kecamatan} and kot.nama_kota = #{nama_kota}")
+			+ "where kec.id_kota = kot.id and kec.nama_kecamatan = #{nama_kecamatan} and kot.nama_kota = #{nama_kota}")
 	public String getKodeKecamatan(@Param("nama_kecamatan") String namaKecamatan
 			, @Param("nama_kota") String namaKota);
 }

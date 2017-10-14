@@ -34,7 +34,7 @@ public class KeluargaController {
 		return "response-failed-data-keluarga-berdasarkan-kk";
 	}
 	
-	@RequestMapping(value = "/keluarga/tambah")
+	@RequestMapping(value = "/keluarga/tambah" , method = RequestMethod.GET)
 	public String formTambahKeluarga(@ModelAttribute("keluargaForm") KeluargaFormModel keluargaFrom) {
 		return "form-tambah-keluarga";
 	}
