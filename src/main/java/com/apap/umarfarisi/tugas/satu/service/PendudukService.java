@@ -1,5 +1,7 @@
 package com.apap.umarfarisi.tugas.satu.service;
 
+import java.util.StringTokenizer;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,23 +23,26 @@ public class PendudukService {
 	}
 	
 	public void addDataPenduduk(PendudukFormModel pendudukForm) {
-//		String nik = generateNIK(pendudukForm);
-//		pendudukForm.setNik(nik);
-		
-		pendudukMapper.addPenduduk(new PendudukFormModel("1234", "1-1-1990", "tempatLahirAAAAA", 
-				1, true, 172, "Islam", "pekerjaan AAAAA", "status perkawinana AAAAA", "status dalam keluarga AAAAA",
-				"golongan darah AAAAA", "2017-05-14", true));
+		String nik = generateNIK(pendudukForm);
+		pendudukForm.setNik(nik);
+		pendudukMapper.addPenduduk(pendudukForm);
 	}
 
 	private String generateNIK(PendudukFormModel pendudukForm) {
 		String kodeKecamatan = kecamatanMapper.getKodeKecamatanByIdKeluarga(pendudukForm.getIdKeluarga());
 		String sixDigitFirst = kodeKecamatan.substring(0, kodeKecamatan.length() - 1);
 		String sixDigitSecod = pendudukForm.getTanggalLahir().replace("-", "");
+		
+		StringTokenizer tokenBirdDay = new StringTokenizer(pendudukForm.getTanggalLahir(), "-");
+		//2017-05-24
+		int year = Integer.parseInt(tokenBirdDay.nextToken().substring(2));
+		int month = Integer.parseInt(tokenBirdDay.nextToken());
+		int day = Integer.parseInt(tokenBirdDay.nextToken());
 		if(pendudukForm.getJenisKelamin() == 1) { //1 means women
-			int dayBird = Integer.valueOf(sixDigitSecod.substring(0,2));
-			dayBird += 40; 
-			sixDigitSecod = dayBird + sixDigitSecod.substring(2);
+			day += 40; 
+			sixDigitSecod = "" + day + month + year;
 		}
+		
 		String nikTillDomisili = sixDigitFirst + sixDigitSecod;
 		String lastNikInDomisili = pendudukMapper.getLatestPendudukInDomisili(nikTillDomisili);
 		if(lastNikInDomisili != null) {
