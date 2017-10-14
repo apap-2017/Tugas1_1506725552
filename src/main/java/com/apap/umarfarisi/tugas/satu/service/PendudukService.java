@@ -22,10 +22,12 @@ public class PendudukService {
 		return pendudukMapper.getPendudukView(nik);
 	}
 	
-	public void addDataPenduduk(PendudukFormModel pendudukForm) {
+	public String addDataPenduduk(PendudukFormModel pendudukForm) {
 		String nik = generateNIK(pendudukForm);
 		pendudukForm.setNik(nik);
 		pendudukMapper.addPenduduk(pendudukForm);
+		
+		return nik;
 	}
 
 	private String generateNIK(PendudukFormModel pendudukForm) {

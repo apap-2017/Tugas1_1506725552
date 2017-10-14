@@ -4374,3 +4374,16 @@ com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'R
 2017-10-14 13:51:46.558  INFO 10368 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
 2017-10-14 13:51:46.813  INFO 10368 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.661 seconds (JVM running for 1249.499)
 2017-10-14 13:53:11.479  INFO 10368 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-14 13:58:50.192  INFO 10368 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 10368 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-14 13:58:50.192  INFO 10368 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-14 13:58:50.551  INFO 10368 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-14 13:58:50.551  INFO 10368 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-14 13:58:50.556  INFO 10368 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-14 13:58:50.758  INFO 10368 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.585 seconds (JVM running for 1673.444)
+2017-10-14 13:59:54.114  INFO 4900 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 4900 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-14 13:59:54.116  INFO 4900 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-14 13:59:55.277  INFO 4900 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-14 13:59:55.278  INFO 4900 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-14 13:59:55.328  INFO 4900 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-14 13:59:56.243  INFO 4900 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 2.326 seconds (JVM running for 2.922)
+2017-10-14 14:00:29.167  INFO 4900 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'

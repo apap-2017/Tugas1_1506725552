@@ -40,7 +40,8 @@ public class PendudukController {
 	@RequestMapping(value = "/penduduk/tambah" , method = RequestMethod.POST)
 	public String formTambahPenduduk(@ModelAttribute("pendudukForm") PendudukFormModel pendudukForm,
 			Model model) {
-		pendudukService.addDataPenduduk(pendudukForm);
+		String nik = pendudukService.addDataPenduduk(pendudukForm);
+		model.addAttribute("nik", nik);
 		return "response-tambah-penduduk";
 	}
 	
