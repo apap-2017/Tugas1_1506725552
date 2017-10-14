@@ -119,6 +119,9 @@ public class KeluargaService {
 		keluargaDB.setRw(keluargaForm.getRw());
 		keluargaDB.setTidakBerlaku(false);
 
+		System.out.println("::::::::::::::::::::::::::::::::: "+nkk);
+		System.out.println("::::::::::::::::::::::::::::::::: "+keluargaDB.toString());
+		
 		keluargaMapper.updateKeluarga(nkk, keluargaDB);
 		
 		//return newNkk from generate nkk
