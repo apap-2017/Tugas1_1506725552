@@ -83,6 +83,13 @@ public class PendudukService {
 		String sixDigitSecod = "" + String.format("%02d", day) + String.format("%02d", month) + String.format("%02d", year);
 		
 		String nik = sixDigitFirst + sixDigitSecod;
+
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> id keluarga: " + pendudukForm.getIdKeluarga());
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> kode kecamatan: " + kodeKecamatan);
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> second : " + sixDigitSecod);
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> nik :" + nik.trim());
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> old nik trim : " + oldNik.substring(0, nik.length()).trim());
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> condisi : " + oldNik.substring(0, nik.length()).trim().equals(nik.trim()));
 		
 		//no nik change
 		if(oldNik.substring(0, nik.length()).trim().equals(nik.trim())) {
