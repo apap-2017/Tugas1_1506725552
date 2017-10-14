@@ -134,13 +134,18 @@ public class KeluargaService {
 		String sixDigitFirst = kodeKecamatan.substring(0, kodeKecamatan.length() - 1);
 		
 		//get second 6 digit
-		String sixDigitSecond = oldNkk.substring(7, 13);
+		String sixDigitSecond = oldNkk.substring(6, 12);
 		
 		//uncomplete nkk which lack of 4 digit last
 		String nkk = sixDigitFirst + sixDigitSecond;
+
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> " + sixDigitSecond);
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> " + nkk.trim());
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> " + oldNkk.substring(0, nkk.length()).trim());
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> " + oldNkk.substring(0, nkk.length()).trim().equals(nkk.trim()));
 		
 		//no nkk change
-		if(oldNkk.substring(0, 13).trim().equals(nkk.trim())) {
+		if(oldNkk.substring(0, nkk.length()).trim().equals(nkk.trim())) {
 			return oldNkk;
 		}
 		
