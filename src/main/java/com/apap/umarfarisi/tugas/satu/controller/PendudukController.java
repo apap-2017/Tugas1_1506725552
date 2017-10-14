@@ -61,4 +61,9 @@ public class PendudukController {
 		
 	}
 	
+	@RequestMapping(value = "/penduduk/ubah/{nik}" , method = RequestMethod.POST)
+	public String formUpdatePenduduk(@PathVariable(value = "nik") String nik, Model model, @ModelAttribute("pendudukForm") PendudukFormModel pendudukForm) {
+		return "response-ubah-penduduk";
+	}
+	
 }
