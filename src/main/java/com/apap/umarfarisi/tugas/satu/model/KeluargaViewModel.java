@@ -23,6 +23,6 @@ public class KeluargaViewModel {
 	private String namaKelurahan;
 	private String namaKecamatan;
 	private String namaKota;
-	private List<PendudukModel> pendudukModels;
+	private List<PendudukDBModel> pendudukDBModels;
 	
 }

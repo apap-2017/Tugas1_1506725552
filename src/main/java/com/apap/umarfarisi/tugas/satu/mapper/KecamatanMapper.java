@@ -25,5 +25,9 @@ public interface KecamatanMapper {
 	@Select("select id, id_kota as idKota, kode_kecamatan as kodeKecamatan, nama_kecamatan as namaKecamatan "
 			+ "from kecamatan where id_kota = #{id_kota}")
 	public List<KecamatanDBModel> getAllKecamatanByIdKota(@Param("id_kota") long idKota);
+
+	@Select("select id, id_kota as idKota, kode_kecamatan as kodeKecamatan, nama_kecamatan as namaKecamatan "
+			+ "from kecamatan where id = #{id_kecamatan};")
+	public KecamatanDBModel getKecamatan(@Param("id_kecamatan") Long idKecamatan);
 	
 }

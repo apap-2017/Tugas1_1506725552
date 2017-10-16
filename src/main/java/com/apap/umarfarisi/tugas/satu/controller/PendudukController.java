@@ -2,7 +2,6 @@ package com.apap.umarfarisi.tugas.satu.controller;
 
 import java.util.List;
 
-import org.codehaus.groovy.util.StringUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.apap.umarfarisi.tugas.satu.model.KecamatanDBModel;
 import com.apap.umarfarisi.tugas.satu.model.KelurahanDBModel;
 import com.apap.umarfarisi.tugas.satu.model.KotaDBModel;
+import com.apap.umarfarisi.tugas.satu.model.PendudukDBModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukFormModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukViewModel;
 import com.apap.umarfarisi.tugas.satu.service.PendudukService;
@@ -109,41 +109,53 @@ public class PendudukController {
 	@RequestMapping(value = "/penduduk/cari")
 	public String searchPenduduk(@RequestParam(value = "id_kota" , required = false) Long idKota, 
 			@RequestParam(value = "id_kecamatan" , required = false) Long idKecamatan, 
-			@RequestParam(value = "id_kelurahan" , required = false) Long idKelurahan) {
+			@RequestParam(value = "id_kelurahan" , required = false) Long idKelurahan,
+			Model model) {
 		
 		if(idKota == null && idKecamatan == null && idKelurahan == null) { //first
 			
 			List<KotaDBModel> kotas = pendudukService.getDaftarKota();
+			model.addAttribute("kotas", kotas);
 			
-			for(KotaDBModel kota : kotas) {
-				System.out.println("11111111111111111 >>>>>>>>>>>>>> "+kota.toString());
-			}
+			return "TODO";
 			
 		}else if(idKota != null && idKecamatan == null && idKelurahan == null) { //second
 			
+			String selectedNamaKota = pendudukService.getNamaKotaYangDipilih(idKota);
 			List<KecamatanDBModel> kecamatans = pendudukService.getDaftarKecamatanPadaSuatuKota(idKota);
+			model.addAttribute("selected_nama_kota", selectedNamaKota);
+			model.addAttribute("kecamatans", kecamatans);
 			
-			for(KecamatanDBModel kecamatan : kecamatans) {
-				System.out.println("22222222222222222 >>>>>>>>>>>>>> "+kecamatan.toString());
-			}
+			return "TODO";
 			
 		}else if(idKota != null && idKecamatan != null && idKelurahan == null) { //third
 			
+			String selectedNamaKota = pendudukService.getNamaKotaYangDipilih(idKota);
+			String selectedNamaKecamatan = pendudukService.getNamaKecamatanYangDipilih(idKecamatan);
 			List<KelurahanDBModel> kelurahans = pendudukService.getDaftarKelurahanPadaSuatuKecamatan(idKecamatan);
+			model.addAttribute("selected_nama_kota", selectedNamaKota);
+			model.addAttribute("selected_nama_kecamatan", selectedNamaKecamatan);
+			model.addAttribute("kelurahans", kelurahans);
 			
-			for(KelurahanDBModel kelurahan : kelurahans) {
-				System.out.println("3333333333333333 >>>>>>>>>>>>>> "+kelurahan.toString());
-			}
+			return "TODO";
 			
 		}else if(idKota != null && idKecamatan != null && idKelurahan != null) { //last
 			
-			//TODO
+			String selectedNamaKota = pendudukService.getNamaKotaYangDipilih(idKota);
+			String selectedNamaKecamatan = pendudukService.getNamaKecamatanYangDipilih(idKecamatan);
+			String selectedNamaKelurahan = pendudukService.getNamaKelurahanYangDipilih(idKelurahan);
+			model.addAttribute("selected_nama_kota", selectedNamaKota);
+			model.addAttribute("selected_nama_kecamatan", selectedNamaKecamatan);
+			model.addAttribute("selected_nama_kelurahan", selectedNamaKelurahan);
 			
-		}else {
+			List<PendudukDBModel> penduduks = pendudukService.getDaftarPendudukBerdasarkanTempatYangDipilih(idKota, idKecamatan, idKelurahan);
+			model.addAttribute("penduduks", penduduks);
+			
+			return "TODO";
 			
 		}
 		
-		return "home";
+		return "TODO";
 	}
 	
 	

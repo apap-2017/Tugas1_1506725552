@@ -19,4 +19,8 @@ public interface KelurahanMappper {
 			+ "from kelurahan where id_kecamatan = #{id_kecamatan}")
 	List<KelurahanDBModel> getAllKelurahanByIdKecamatan(@Param("id_kecamatan") long idKecamatan);
 
+	@Select("select id, id_kecamatan as idKecamatan, kode_kelurahan as kodeKelurahan, nama_kelurahan as namaKelurahan, kode_pos as kodePos "
+			+ "from kelurahan where id = #{id_kelurahan};")
+	KelurahanDBModel getKelurahan(@Param("id_kelurahan") Long idKelurahan);
+
 }

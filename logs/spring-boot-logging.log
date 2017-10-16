@@ -8333,3 +8333,52 @@ java.lang.IllegalArgumentException: Template name cannot be null or empty
 2017-10-16 18:40:29.616  WARN 8648 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type [java.lang.String] to required type [java.lang.Long]; nested exception is java.lang.NumberFormatException: For input string: "1?"
 2017-10-16 18:41:20.477  WARN 8648 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type [java.lang.String] to required type [java.lang.Long]; nested exception is java.lang.NumberFormatException: For input string: "1?"
 2017-10-16 18:41:20.477  WARN 8648 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type [java.lang.String] to required type [java.lang.Long]; nested exception is java.lang.NumberFormatException: For input string: "1?"
+2017-10-16 18:49:29.547  INFO 8648 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 8648 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-16 18:49:29.548  INFO 8648 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-16 18:49:29.909  INFO 8648 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-16 18:49:29.909  INFO 8648 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-16 18:49:29.915  INFO 8648 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-16 18:49:30.155  INFO 8648 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.63 seconds (JVM running for 1054.627)
+2017-10-16 18:54:54.166  INFO 8648 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 8648 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-16 18:54:54.166  INFO 8648 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-16 18:54:54.523  INFO 8648 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-16 18:54:54.524  INFO 8648 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-16 18:54:54.807  INFO 8648 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-16 18:54:55.055  INFO 8648 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.917 seconds (JVM running for 1379.528)
+2017-10-16 19:16:56.865  INFO 8664 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 8664 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-16 19:16:56.865  INFO 8664 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-16 19:16:58.255  INFO 8664 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-16 19:16:58.257  INFO 8664 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-16 19:16:58.305  INFO 8664 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-16 19:16:59.148  INFO 8664 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 2.471 seconds (JVM running for 3.008)
+2017-10-16 19:17:15.213  INFO 8664 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-16 19:17:42.412  INFO 8664 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 8664 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-16 19:17:42.412  INFO 8664 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-16 19:17:42.787  INFO 8664 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-16 19:17:42.787  INFO 8664 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-16 19:17:43.335  INFO 8664 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-16 19:17:43.616  INFO 8664 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 1.238 seconds (JVM running for 47.468)
+2017-10-16 19:21:11.470  INFO 8664 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 8664 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-16 19:21:11.470  INFO 8664 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-16 19:21:11.798  INFO 8664 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-16 19:21:11.798  INFO 8664 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-16 19:21:12.330  INFO 8664 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-16 19:21:12.548  INFO 8664 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 1.113 seconds (JVM running for 256.405)
+2017-10-16 19:21:26.382  INFO 8664 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 8664 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-16 19:21:26.382  INFO 8664 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-16 19:21:26.710  INFO 8664 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-16 19:21:26.710  INFO 8664 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-16 19:21:26.726  INFO 8664 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-16 19:21:26.945  INFO 8664 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.6 seconds (JVM running for 270.799)
+2017-10-16 19:21:37.653  INFO 8664 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 8664 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-16 19:21:37.653  INFO 8664 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-16 19:21:37.966  INFO 8664 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-16 19:21:37.981  INFO 8664 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-16 19:21:37.997  INFO 8664 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-16 19:21:38.200  INFO 8664 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.582 seconds (JVM running for 282.055)
+2017-10-16 19:22:12.255  INFO 8664 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 8664 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-16 19:22:12.255  INFO 8664 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-16 19:22:12.615  INFO 8664 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-16 19:22:12.615  INFO 8664 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-16 19:22:12.662  INFO 8664 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-16 19:22:12.881  INFO 8664 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.662 seconds (JVM running for 316.731)

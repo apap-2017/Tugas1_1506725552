@@ -8,12 +8,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-public class PendudukModel {
+public class PendudukDBModel {
 	
 	private long id;
 	private String nik;

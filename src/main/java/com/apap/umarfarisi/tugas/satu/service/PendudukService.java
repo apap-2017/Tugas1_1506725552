@@ -13,6 +13,7 @@ import com.apap.umarfarisi.tugas.satu.mapper.PendudukMapper;
 import com.apap.umarfarisi.tugas.satu.model.KecamatanDBModel;
 import com.apap.umarfarisi.tugas.satu.model.KelurahanDBModel;
 import com.apap.umarfarisi.tugas.satu.model.KotaDBModel;
+import com.apap.umarfarisi.tugas.satu.model.PendudukDBModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukFormModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukViewModel;
 
@@ -22,7 +23,7 @@ public class PendudukService {
 	@Autowired
 	private PendudukMapper pendudukMapper;
 	@Autowired
-	private KelurahanMappper KelurahanMappper;
+	private KelurahanMappper kelurahanMappper;
 	@Autowired
 	private KecamatanMapper kecamatanMapper;
 	@Autowired
@@ -135,7 +136,25 @@ public class PendudukService {
 	}
 
 	public List<KelurahanDBModel> getDaftarKelurahanPadaSuatuKecamatan(Long idKecamatan) {
-		return KelurahanMappper.getAllKelurahanByIdKecamatan(idKecamatan);
+		return kelurahanMappper.getAllKelurahanByIdKecamatan(idKecamatan);
+	}
+
+	public String getNamaKotaYangDipilih(Long idKota) {
+		return kotaMapper.getKota(idKota).getNamaKota();
+	}
+	
+	public String getNamaKecamatanYangDipilih(Long idKecamatan) {
+		return kecamatanMapper.getKecamatan(idKecamatan).getNamaKecamatan();
+	}
+	
+	public String getNamaKelurahanYangDipilih(Long idKelurahan) {
+		return kelurahanMappper.getKelurahan(idKelurahan).getNamaKelurahan();
+	}
+
+	public List<PendudukDBModel> getDaftarPendudukBerdasarkanTempatYangDipilih(Long idKota, Long idKecamatan,
+			Long idKelurahan) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

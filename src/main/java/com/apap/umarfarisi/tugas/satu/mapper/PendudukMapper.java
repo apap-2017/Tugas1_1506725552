@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Update;
 
 import com.apap.umarfarisi.tugas.satu.model.KeluargaFormModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukFormModel;
-import com.apap.umarfarisi.tugas.satu.model.PendudukModel;
+import com.apap.umarfarisi.tugas.satu.model.PendudukDBModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukViewModel;
 
 @Mapper
@@ -25,7 +25,7 @@ public interface PendudukMapper {
 	
 	@Select("select nama, nik, jenis_kelamin as jenisKelamin, tempat_lahir as tempatLahir, tanggal_lahir as tanggalLahir, agama, pekerjaan, status_perkawinan as statusPerkawinan, status_dalam_keluarga as statusDalamKeluarga, is_wni as isWni "
 			+ "from penduduk where id_keluarga = ${id_keluarga};")
-	public List<PendudukModel> getAllPendudukByIdKeluarga(@Param("id_keluarga") String idKeluarga);
+	public List<PendudukDBModel> getAllPendudukByIdKeluarga(@Param("id_keluarga") String idKeluarga);
 	
 	@Insert("insert into penduduk (nik, nama, tempat_lahir, tanggal_lahir, jenis_kelamin, is_wni, id_keluarga, agama, pekerjaan, status_perkawinan, status_dalam_keluarga, golongan_darah, is_wafat) "
 			+ "VALUES ('${pendudukForm.nik}', '${pendudukForm.nama}', '${pendudukForm.tempatLahir}', '${pendudukForm.tanggalLahir}', ${pendudukForm.jenisKelamin}, ${pendudukForm.wni}, '${pendudukForm.idKeluarga}', "
