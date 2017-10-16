@@ -100,5 +100,28 @@ public class PendudukController {
 		
 	}
 	
+	@RequestMapping(value = "/penduduk/cari")
+	public String searchPenduduk() {
+		return "";
+	}
+
+	@RequestMapping(value = "/penduduk/cari")
+	public String searchPenduduk(@RequestParam(value = "nama_kota" , required = true) String namaKota) {
+		return "";
+	}
+
+	@RequestMapping(value = "/penduduk/cari")
+	public String searchPenduduk(@RequestParam(value = "nama_kota" , required = true) String namaKota, 
+			@RequestParam(value = "nama_kecamatan" , required = true) String namaKecamatan) {
+		return "";
+	}
+
+	@RequestMapping(value = "/penduduk/cari")
+	public String searchPenduduk(@RequestParam(value = "nama_kota" , required = true) String namaKota, 
+			@RequestParam(value = "nama_kecamatan" , required = true) String namaKecamatan, 
+			@RequestParam(value = "nama_kelurahan" , required = true) String namaKelurahan) {
+		return "";
+	}
+	
 	
 }
