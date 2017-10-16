@@ -12,7 +12,7 @@ import lombok.Setter;
 @Getter
 @Setter
 
-public class KelurahanModel {
+public class KelurahanDBModel {
 	
 	private long id;
 	private long idKecamatan;

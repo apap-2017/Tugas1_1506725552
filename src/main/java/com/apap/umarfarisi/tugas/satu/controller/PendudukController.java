@@ -1,5 +1,8 @@
 package com.apap.umarfarisi.tugas.satu.controller;
 
+import java.util.List;
+
+import org.codehaus.groovy.util.StringUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,6 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.apap.umarfarisi.tugas.satu.model.KecamatanDBModel;
+import com.apap.umarfarisi.tugas.satu.model.KelurahanDBModel;
+import com.apap.umarfarisi.tugas.satu.model.KotaDBModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukFormModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukViewModel;
 import com.apap.umarfarisi.tugas.satu.service.PendudukService;
@@ -99,28 +105,45 @@ public class PendudukController {
 		return "response-ubah-status-kematian-penduduk";
 		
 	}
-	
-	@RequestMapping(value = "/penduduk/cari")
-	public String searchPenduduk() {
-		return "";
-	}
 
 	@RequestMapping(value = "/penduduk/cari")
-	public String searchPenduduk(@RequestParam(value = "nama_kota" , required = true) String namaKota) {
-		return "";
-	}
-
-	@RequestMapping(value = "/penduduk/cari")
-	public String searchPenduduk(@RequestParam(value = "nama_kota" , required = true) String namaKota, 
-			@RequestParam(value = "nama_kecamatan" , required = true) String namaKecamatan) {
-		return "";
-	}
-
-	@RequestMapping(value = "/penduduk/cari")
-	public String searchPenduduk(@RequestParam(value = "nama_kota" , required = true) String namaKota, 
-			@RequestParam(value = "nama_kecamatan" , required = true) String namaKecamatan, 
-			@RequestParam(value = "nama_kelurahan" , required = true) String namaKelurahan) {
-		return "";
+	public String searchPenduduk(@RequestParam(value = "id_kota" , required = false) Long idKota, 
+			@RequestParam(value = "id_kecamatan" , required = false) Long idKecamatan, 
+			@RequestParam(value = "id_kelurahan" , required = false) Long idKelurahan) {
+		
+		if(idKota == null && idKecamatan == null && idKelurahan == null) { //first
+			
+			List<KotaDBModel> kotas = pendudukService.getDaftarKota();
+			
+			for(KotaDBModel kota : kotas) {
+				System.out.println("11111111111111111 >>>>>>>>>>>>>> "+kota.toString());
+			}
+			
+		}else if(idKota != null && idKecamatan == null && idKelurahan == null) { //second
+			
+			List<KecamatanDBModel> kecamatans = pendudukService.getDaftarKecamatanPadaSuatuKota(idKota);
+			
+			for(KecamatanDBModel kecamatan : kecamatans) {
+				System.out.println("22222222222222222 >>>>>>>>>>>>>> "+kecamatan.toString());
+			}
+			
+		}else if(idKota != null && idKecamatan != null && idKelurahan == null) { //third
+			
+			List<KelurahanDBModel> kelurahans = pendudukService.getDaftarKelurahanPadaSuatuKecamatan(idKecamatan);
+			
+			for(KelurahanDBModel kelurahan : kelurahans) {
+				System.out.println("3333333333333333 >>>>>>>>>>>>>> "+kelurahan.toString());
+			}
+			
+		}else if(idKota != null && idKecamatan != null && idKelurahan != null) { //last
+			
+			//TODO
+			
+		}else {
+			
+		}
+		
+		return "home";
 	}
 	
 	

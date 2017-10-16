@@ -5,19 +5,17 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
+@ToString
+public class KotaDBModel {
 
-public class KecamatanModel {
-	
 	private long id;
-	private String kodeKelurahan;
-	private String idKecamatan;
-	private String namaKecamatan;
-	private String kodePos;
+	private String kodeKota;
+	private String namaKota;
 	
 }

@@ -1,12 +1,18 @@
 package com.apap.umarfarisi.tugas.satu.service;
 
+import java.util.List;
 import java.util.StringTokenizer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.apap.umarfarisi.tugas.satu.mapper.KecamatanMapper;
+import com.apap.umarfarisi.tugas.satu.mapper.KelurahanMappper;
+import com.apap.umarfarisi.tugas.satu.mapper.KotaMapper;
 import com.apap.umarfarisi.tugas.satu.mapper.PendudukMapper;
+import com.apap.umarfarisi.tugas.satu.model.KecamatanDBModel;
+import com.apap.umarfarisi.tugas.satu.model.KelurahanDBModel;
+import com.apap.umarfarisi.tugas.satu.model.KotaDBModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukFormModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukViewModel;
 
@@ -16,7 +22,11 @@ public class PendudukService {
 	@Autowired
 	private PendudukMapper pendudukMapper;
 	@Autowired
+	private KelurahanMappper KelurahanMappper;
+	@Autowired
 	private KecamatanMapper kecamatanMapper;
+	@Autowired
+	private KotaMapper kotaMapper;
 	
 	public PendudukViewModel getDataPendudukBerdasarkanNik(String nik) {
 		return pendudukMapper.getPendudukView(nik);
@@ -114,6 +124,18 @@ public class PendudukService {
 		pendudukMapper.updatePenduduk(nik, pendudukForm);
 		
 		return pendudukForm.isWafat();
+	}
+
+	public List<KotaDBModel> getDaftarKota() {
+		return kotaMapper.getAllKota();
+	}
+
+	public List<KecamatanDBModel> getDaftarKecamatanPadaSuatuKota(Long idKota) {
+		return kecamatanMapper.getAllKecamatanByIdKota(idKota);
+	}
+
+	public List<KelurahanDBModel> getDaftarKelurahanPadaSuatuKecamatan(Long idKecamatan) {
+		return KelurahanMappper.getAllKelurahanByIdKecamatan(idKecamatan);
 	}
 	
 	
