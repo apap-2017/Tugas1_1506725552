@@ -76,22 +76,6 @@ public class PendudukController {
 		return "response-ubah-penduduk";
 	}
 	
-//	@RequestMapping(value = "/penduduk/{nik}" , method = RequestMethod.GET)
-//	public String formUbahStatusKematianPenduduk(@PathVariable(value = "nik") String nik, Model model) {
-//		
-//		PendudukDBModel pendudukForm = pendudukService.getDataPendudukForForm(nik);
-//		
-//		model.addAttribute("nik", nik);
-//		
-//		if(pendudukForm != null) {
-//			model.addAttribute("wafat", pendudukForm.isWafat());
-//			return "form-ubah-status-kematian-penduduk";
-//		}
-//		
-//		return "not-found-data-penduduk-by-nik";
-//		
-//	}
-	
 	@RequestMapping(value = "/penduduk" , method = RequestMethod.POST)
 	public String formUbahStatusKematianPenduduk(Model model, @RequestParam(value = "nik") String nik) {
 		
