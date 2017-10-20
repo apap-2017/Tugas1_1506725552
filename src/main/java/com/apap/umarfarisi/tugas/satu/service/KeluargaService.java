@@ -17,6 +17,7 @@ import com.apap.umarfarisi.tugas.satu.model.KeluargaDBModel;
 import com.apap.umarfarisi.tugas.satu.model.KeluargaFormModel;
 import com.apap.umarfarisi.tugas.satu.model.KeluargaViewModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukDBModel;
+import com.apap.umarfarisi.tugas.satu.utils.PendudukUtils;
 
 @Service
 public class KeluargaService {
@@ -111,7 +112,31 @@ public class KeluargaService {
 		return keluargaForm;
 	}
 
-	public String updateDataKeluarga(String nkk, KeluargaFormModel keluargaForm) {
+	public String updateDataKeluarga(String nkk, final KeluargaFormModel keluargaForm) {
+		
+		
+		
+		/**
+		 * Change NIK anggota keluarga
+		 */
+		KeluargaFormModel olds = keluargaMapper.getKeluargaForm(nkk);
+		if(!keluargaForm.getKelurahan().equals(olds.getKelurahan()) || 
+				!keluargaForm.getKecamatan().equals(olds.getKecamatan()) ||
+				!keluargaForm.getKota().equals(olds.getKota())) {
+			
+			KeluargaDBModel newKeluargaDB = keluargaMapper.getKeluargaDB(nkk);
+			
+			List<PendudukDBModel> anggotaKeluargas = pendudukMapper.getAllPendudukByIdKeluarga(newKeluargaDB.getId());
+			
+			for(PendudukDBModel anggotaKeluarga : anggotaKeluargas) {
+				String oldNik = anggotaKeluarga.getNik();
+				String newNik = PendudukUtils.generateNIK(kecamatanMapper, pendudukMapper, anggotaKeluarga.getIdKeluarga(), 
+						anggotaKeluarga.getTanggalLahir(), anggotaKeluarga.getJenisKelamin(), anggotaKeluarga.getNik());
+				anggotaKeluarga.setNik(newNik);
+				pendudukMapper.updatePenduduk(oldNik, anggotaKeluarga);
+			}
+		}
+		
 		
 		keluargaForm.setKota(keluargaForm.getKota().toUpperCase());
 		keluargaForm.setKecamatan(keluargaForm.getKecamatan().toUpperCase());
@@ -128,27 +153,6 @@ public class KeluargaService {
 		keluargaDB.setTidakBerlaku(false);
 		
 		keluargaMapper.updateKeluarga(nkk, keluargaDB);
-		
-		//update penduduk
-		new Thread(new Runnable() {
-			@Override
-			public void run() {
-				KeluargaFormModel olds = keluargaMapper.getKeluargaForm(nkk);
-				if(!keluargaForm.getKelurahan().equals(olds.getKelurahan()) || 
-						!keluargaForm.getKecamatan().equals(olds.getKecamatan()) ||
-						!keluargaForm.getKota().equals(olds.getKota())) {
-					
-					KeluargaDBModel keluargaDB = keluargaMapper.getKeluargaDB(nkk);
-					
-					List<PendudukDBModel> anggotaKeluarga = pendudukMapper.getAllPendudukByIdKeluarga(keluargaDB.getId());
-					
-					for(int i = 0 ; i < anggotaKeluarga.size() ; i++) {
-						//TODO
-					}
-					
-				}
-			}
-		}).start();
 		
 		//return newNkk from generate nkk
 		return keluargaDB.getNkk();

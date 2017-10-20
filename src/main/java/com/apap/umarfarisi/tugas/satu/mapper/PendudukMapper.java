@@ -23,7 +23,7 @@ public interface PendudukMapper {
 	public PendudukViewModel getPendudukView(@Param("nik") String nik);
 	
 	@Select("select nama, nik, jenis_kelamin as jenisKelamin, tempat_lahir as tempatLahir, tanggal_lahir as tanggalLahir, agama, pekerjaan, status_perkawinan as statusPerkawinan, "
-			+ "golongan_darah as golonganDarah, status_dalam_keluarga as statusDalamKeluarga, is_wni as isWni "
+			+ "golongan_darah as golonganDarah, status_dalam_keluarga as statusDalamKeluarga, is_wni as isWni , id_keluarga as idKeluarga "
 			+ "from penduduk where id_keluarga = ${id_keluarga};")
 	public List<PendudukDBModel> getAllPendudukByIdKeluarga(@Param("id_keluarga") long idKeluarga);
 	

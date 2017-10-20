@@ -15,6 +15,7 @@ import com.apap.umarfarisi.tugas.satu.model.KelurahanDBModel;
 import com.apap.umarfarisi.tugas.satu.model.KotaDBModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukDBModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukViewModel;
+import com.apap.umarfarisi.tugas.satu.utils.PendudukUtils;
 
 @Service
 public class PendudukService {
@@ -33,7 +34,7 @@ public class PendudukService {
 	}
 	
 	public String addDataPenduduk(PendudukDBModel pendudukForm) {
-		String nik = generateNIK(pendudukForm, null);
+		String nik = PendudukUtils.generateNIK(kecamatanMapper, pendudukMapper, pendudukForm.getIdKeluarga(), pendudukForm.getTanggalLahir(), pendudukForm.getJenisKelamin(), null);
 		pendudukForm.setNik(nik);
 		pendudukMapper.addPenduduk(pendudukForm);
 		
@@ -47,7 +48,7 @@ public class PendudukService {
 	}
 
 	public String updateDataPenduduk(String nik, PendudukDBModel pendudukForm) {
-		String newNik = generateNIK(pendudukForm, nik);
+		String newNik = PendudukUtils.generateNIK(kecamatanMapper, pendudukMapper, pendudukForm.getIdKeluarga(), pendudukForm.getTanggalLahir(), pendudukForm.getJenisKelamin(), nik);
 		pendudukForm.setNik(newNik);
 		pendudukMapper.updatePenduduk(nik, pendudukForm);
 		return newNik;
@@ -91,40 +92,5 @@ public class PendudukService {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
-	private String generateNIK(PendudukDBModel pendudukForm, String oldNik) {
-		String kodeKecamatan = kecamatanMapper.getKodeKecamatanByIdKeluarga(pendudukForm.getIdKeluarga());
-		String sixDigitFirst = kodeKecamatan.substring(0, kodeKecamatan.length() - 1);
-		
-		StringTokenizer tokenBirdDay = new StringTokenizer(pendudukForm.getTanggalLahir(), "-");
-		//2017-05-24
-		int year = Integer.parseInt(tokenBirdDay.nextToken().substring(2));
-		int month = Integer.parseInt(tokenBirdDay.nextToken());
-		int day = Integer.parseInt(tokenBirdDay.nextToken());
-		if(pendudukForm.getJenisKelamin() == 1) //1 means women
-			day += 40; 
-		
-		String sixDigitSecod = String.format("%02d", day) + String.format("%02d", month) + String.format("%02d", year);
-		
-		String nik = sixDigitFirst + sixDigitSecod;
-		
-		//no NIK change
-		if(oldNik != null && oldNik.substring(0, nik.length()).trim().equals(nik.trim()))
-			return oldNik;
-		
-		int last = 0;
-		
-		//check the last NIK
-		String lastNikInDomisili = pendudukMapper.getLatestPendudukInDomisili(nik);
-		if(lastNikInDomisili != null) {
-			last = Integer.valueOf(lastNikInDomisili.substring(nik.length()));
-			last++;
-		}
-		
-		return nik + String.format("%04d", last);
-	}
-
-
-	
 	
 }
