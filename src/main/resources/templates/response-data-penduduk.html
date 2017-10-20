@@ -5,7 +5,70 @@
 </head>
 <body>
 
-	<h1 th:text></h1>
+	<h1 th:text="'Lihat Data Penduduk - ' + ${penduduk.nik}"></h1>
+	
+	<table>
+		<tr>
+			<td>NIK</td>
+			<td data-th-text="${penduduk.nik}"></td>
+		</tr>
+		<tr>
+			<td>Nama</td>
+			<td data-th-text="${penduduk.nama}"></td>
+		</tr>
+		<tr>
+			<td>Tempat, Tanggal Lahir</td>
+			<td data-th-text="${penduduk.tempatLahir} + ', ' + ${penduduk.tanggalLahir}"></td>
+		</tr>
+		<tr>
+			<td>Alamat</td>
+			<td data-th-text="${penduduk.alamat}"></td>
+		</tr>
+		<tr>
+			<td>RT/RW</td>
+			<td data-th-text="${penduduk.rt} + '/' + ${penduduk.rw}"></td>
+		</tr>
+		<tr>
+			<td>Kelurahan/Desa</td>
+			<td data-th-text="${penduduk.namaKelurahan}"></td>
+		</tr>
+		<tr>
+			<td>Kecamatan</td>
+			<td data-th-text="${penduduk.namaKecamatan}"></td>
+		</tr>
+		<tr>
+			<td>Kota</td>
+			<td data-th-text="${penduduk.namaKota}"></td>
+		</tr>
+		<tr>
+			<td>Golongan Darah</td>
+			<td data-th-text="${penduduk.golonganDarah}"></td>
+		</tr>
+		<tr>
+			<td>Agama</td>
+			<td data-th-text="${penduduk.agama}"></td>
+		</tr>
+		<tr>
+			<td>Jenis Kelamin</td>
+			<td data-th-text="${penduduk.jenisKelamin == 1} ? 'Wanita' : 'Pria'"></td>
+		</tr>
+		<tr>
+			<td>Status Perkawinan</td>
+			<td data-th-text="${penduduk.statusPerkawinan}"></td>
+		</tr>
+		<tr>
+			<td>Pekerjaan</td>
+			<td data-th-text="${penduduk.pekerjaan}"></td>
+		</tr>
+		<tr>
+			<td>Kewarganegaraan</td>
+			<td data-th-text="${penduduk.wni} ? 'WNI' : 'WNA'"></td>
+		</tr>
+		<tr>
+			<td>Status Kematian</td>
+			<td data-th-text="${penduduk.wafat} ? 'Meninggal' : 'Hidup'"></td>
+		</tr>
+	</table>
 
 </body>
 </html>

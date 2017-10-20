@@ -21,7 +21,7 @@ public class PendudukViewModel {
 	private String nik;
 	private String nama;
 	private String tempatLahir;
-	private Date tanggalLahir;
+	private String tanggalLahir;
 	private String alamat;
 	private String rt;
 	private String rw;
@@ -32,6 +32,8 @@ public class PendudukViewModel {
 	private String agama;
 	private String statusPerkawinan;
 	private String pekerjaan;
-	private boolean statusKematian;
+	private boolean isWafat;
+	private boolean isWni;
+	private String jenisKelamin;
 	
 }
