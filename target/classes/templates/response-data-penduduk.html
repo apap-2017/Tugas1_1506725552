@@ -7,68 +7,73 @@
 
 	<h1 th:text="'Lihat Data Penduduk - ' + ${penduduk.nik}"></h1>
 	
-	<table>
+	<table th:object="${penduduk}">
 		<tr>
 			<td>NIK</td>
-			<td data-th-text="${penduduk.nik}"></td>
+			<td data-th-text="*{nik}"></td>
 		</tr>
 		<tr>
 			<td>Nama</td>
-			<td data-th-text="${penduduk.nama}"></td>
+			<td data-th-text="*{nama}"></td>
 		</tr>
 		<tr>
 			<td>Tempat, Tanggal Lahir</td>
-			<td data-th-text="${penduduk.tempatLahir} + ', ' + ${penduduk.tanggalLahir}"></td>
+			<td data-th-text="*{tempatLahir} + ', ' + *{tanggalLahir}"></td>
 		</tr>
 		<tr>
 			<td>Alamat</td>
-			<td data-th-text="${penduduk.alamat}"></td>
+			<td data-th-text="*{alamat}"></td>
 		</tr>
 		<tr>
 			<td>RT/RW</td>
-			<td data-th-text="${penduduk.rt} + '/' + ${penduduk.rw}"></td>
+			<td data-th-text="*{rt} + '/' + *{rw}"></td>
 		</tr>
 		<tr>
 			<td>Kelurahan/Desa</td>
-			<td data-th-text="${penduduk.namaKelurahan}"></td>
+			<td data-th-text="*{namaKelurahan}"></td>
 		</tr>
 		<tr>
 			<td>Kecamatan</td>
-			<td data-th-text="${penduduk.namaKecamatan}"></td>
+			<td data-th-text="*{namaKecamatan}"></td>
 		</tr>
 		<tr>
 			<td>Kota</td>
-			<td data-th-text="${penduduk.namaKota}"></td>
+			<td data-th-text="*{namaKota}"></td>
 		</tr>
 		<tr>
 			<td>Golongan Darah</td>
-			<td data-th-text="${penduduk.golonganDarah}"></td>
+			<td data-th-text="*{golonganDarah}"></td>
 		</tr>
 		<tr>
 			<td>Agama</td>
-			<td data-th-text="${penduduk.agama}"></td>
+			<td data-th-text="*{agama}"></td>
 		</tr>
 		<tr>
 			<td>Jenis Kelamin</td>
-			<td data-th-text="${penduduk.jenisKelamin == 1} ? 'Wanita' : 'Pria'"></td>
+			<td data-th-text="*{jenisKelamin == 1} ? 'Wanita' : 'Pria'"></td>
 		</tr>
 		<tr>
 			<td>Status Perkawinan</td>
-			<td data-th-text="${penduduk.statusPerkawinan}"></td>
+			<td data-th-text="*{statusPerkawinan}"></td>
 		</tr>
 		<tr>
 			<td>Pekerjaan</td>
-			<td data-th-text="${penduduk.pekerjaan}"></td>
+			<td data-th-text="*{pekerjaan}"></td>
 		</tr>
 		<tr>
 			<td>Kewarganegaraan</td>
-			<td data-th-text="${penduduk.wni} ? 'WNI' : 'WNA'"></td>
+			<td data-th-text="*{wni} ? 'WNI' : 'WNA'"></td>
 		</tr>
 		<tr>
 			<td>Status Kematian</td>
-			<td data-th-text="${penduduk.wafat} ? 'Meninggal' : 'Hidup'"></td>
+			<td data-th-text="*{wafat} ? 'Meninggal' : 'Hidup'"></td>
 		</tr>
 	</table>
+	
+	<form th:action="@{/penduduk}" method="post">
+		<input hidden="true" th:field="${penduduk.nik}"></input>
+		<button type="submit" th:text="${penduduk.wafat} ? 'Aktifkan' : 'Non Aktifkan'"></button>
+	</form>
 
 </body>
 </html>
