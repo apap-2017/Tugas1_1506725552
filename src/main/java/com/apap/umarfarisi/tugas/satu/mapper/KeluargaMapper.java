@@ -13,7 +13,7 @@ import com.apap.umarfarisi.tugas.satu.model.KeluargaViewModel;
 @Mapper
 public interface KeluargaMapper {
 
-	@Select("select k.id, k.nomor_kk as nkk, k.alamat, k.rt, k.rw, kel.nama_kelurahan as namaKelurahan, kec.nama_kecamatan as namaKecamatan, ko.nama_kota as namaKota "
+	@Select("select k.id, k.nomor_kk as nkk, k.alamat, k.rt, k.rw, kel.nama_kelurahan as namaKelurahan, kec.nama_kecamatan as namaKecamatan, ko.nama_kota as namaKota, k.is_tidak_berlaku as tidakBerlaku "
 			+ "from keluarga k, kelurahan kel, kecamatan kec, kota ko "
 			+ "where k.id_kelurahan = kel.id and kel.id_kecamatan = kec.id and kec.id_kota = ko.id and k.nomor_kk = #{nkk};")
 	public KeluargaViewModel getKeluargaView(@Param("nkk") String nkk);
@@ -38,5 +38,9 @@ public interface KeluargaMapper {
 	@Select("select id, nomor_kk as nkk, alamat, rt, rw, id_kelurahan as idKelurahan, is_tidak_berlaku as tidakBerlaku "
 			+ "from keluarga where nomor_kk = #{nkk}")
 	public KeluargaDBModel getKeluargaDB(@Param("nkk") String nkk);
+
+	@Select("select id, nomor_kk as nkk, alamat, rt, rw, id_kelurahan as idKelurahan, is_tidak_berlaku as tidakBerlaku "
+			+ "from keluarga where id = #{id_keluarga}")
+	public KeluargaDBModel getKeluargaDBById(@Param("id_keluarga") long idKeluarga);
 	
 }

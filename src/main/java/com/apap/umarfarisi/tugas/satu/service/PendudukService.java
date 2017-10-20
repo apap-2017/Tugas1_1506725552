@@ -7,10 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.apap.umarfarisi.tugas.satu.mapper.KecamatanMapper;
+import com.apap.umarfarisi.tugas.satu.mapper.KeluargaMapper;
 import com.apap.umarfarisi.tugas.satu.mapper.KelurahanMappper;
 import com.apap.umarfarisi.tugas.satu.mapper.KotaMapper;
 import com.apap.umarfarisi.tugas.satu.mapper.PendudukMapper;
 import com.apap.umarfarisi.tugas.satu.model.KecamatanDBModel;
+import com.apap.umarfarisi.tugas.satu.model.KeluargaDBModel;
 import com.apap.umarfarisi.tugas.satu.model.KelurahanDBModel;
 import com.apap.umarfarisi.tugas.satu.model.KotaDBModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukDBModel;
@@ -28,6 +30,8 @@ public class PendudukService {
 	private KecamatanMapper kecamatanMapper;
 	@Autowired
 	private KotaMapper kotaMapper;
+	@Autowired
+	private KeluargaMapper keluargaMapper;
 	
 	public PendudukViewModel getDataPendudukBerdasarkanNik(String nik) {
 		return pendudukMapper.getPendudukView(nik);
@@ -59,6 +63,22 @@ public class PendudukService {
 		pendudukForm.setWafat( !pendudukForm.isWafat() );
 		
 		pendudukMapper.updatePenduduk(nik, pendudukForm);
+		
+		KeluargaDBModel keluarga = keluargaMapper.getKeluargaDBById(pendudukForm.getIdKeluarga());
+		if(keluarga.isTidakBerlaku() != pendudukForm.isWafat()) {
+			
+			List<PendudukDBModel> anggotaKeluargas = pendudukMapper.getAllPendudukByIdKeluarga(pendudukForm.getIdKeluarga());
+			boolean isChange = false;
+			for(int i = 0 ; i < anggotaKeluargas.size() && !isChange ; i++) {
+				if(keluarga.isTidakBerlaku() != anggotaKeluargas.get(i).isWafat()) {
+					isChange = true;
+				}
+			}
+			if(isChange) {
+				keluarga.setTidakBerlaku(!keluarga.isTidakBerlaku());
+				keluargaMapper.updateKeluarga(keluarga.getNkk(), keluarga);
+			}
+		}
 		
 		return pendudukForm.isWafat();
 	}

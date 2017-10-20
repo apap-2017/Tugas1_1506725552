@@ -11459,3 +11459,455 @@ public java.lang.String com.apap.umarfarisi.tugas.satu.controller.PendudukContro
 2017-10-20 16:56:35.333  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
 2017-10-20 16:56:35.554  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.594 seconds (JVM running for 668.995)
 2017-10-20 16:56:51.743  INFO 7600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-20 17:02:44.203  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:02:44.204  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:02:44.521  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:02:44.521  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:02:44.526  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:02:44.739  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.557 seconds (JVM running for 1038.181)
+2017-10-20 17:02:58.322  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:02:58.323  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:02:58.628  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:02:58.629  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:02:58.634  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:02:58.850  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.553 seconds (JVM running for 1052.291)
+2017-10-20 17:03:01.500  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:03:01.500  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:03:01.823  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:03:01.824  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:03:01.829  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:03:02.042  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.567 seconds (JVM running for 1055.484)
+2017-10-20 17:03:24.627  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:03:24.627  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:03:24.936  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:03:24.936  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:03:24.981  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:03:25.189  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.586 seconds (JVM running for 1078.63)
+2017-10-20 17:05:43.193  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:05:43.193  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:05:43.509  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:05:43.510  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:05:43.515  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:05:43.732  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.563 seconds (JVM running for 1217.173)
+2017-10-20 17:06:20.362  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:06:20.362  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:06:20.677  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:06:20.677  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:06:20.683  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:06:20.891  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.553 seconds (JVM running for 1254.332)
+2017-10-20 17:08:29.240  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:08:29.241  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:08:29.572  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:08:29.572  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:08:29.577  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:08:29.786  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.57 seconds (JVM running for 1383.227)
+2017-10-20 17:09:26.502  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:09:26.502  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:09:26.816  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:09:26.816  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:09:26.821  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:09:26.902 ERROR 7600 --- [restartedMain] o.m.spring.mapper.MapperFactoryBean      : Error while adding the mapper 'interface com.apap.umarfarisi.tugas.satu.mapper.KeluargaMapper' to configuration.
+
+java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.apap.umarfarisi.tugas.satu.mapper.KeluargaMapper.getKeluargaDB
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:837) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:809) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.session.Configuration.addMappedStatement(Configuration.java:633) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:302) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parseStatement(MapperAnnotationBuilder.java:325) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:130) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:706) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:81) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44) [spring-tx-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:207) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1214) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1054) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1019) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:566) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:349) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:207) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1214) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1054) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1019) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:566) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:349) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:776) [spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:861) [spring-context-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541) [spring-context-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at com.apap.umarfarisi.tugas.satu.ApapUmarFarisiTugasSatuApplication.main(ApapUmarFarisiTugasSatuApplication.java:12) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+
+2017-10-20 17:09:26.903  WARN 7600 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'keluargaController': Unsatisfied dependency expressed through field 'keluargaService': Error creating bean with name 'keluargaService': Unsatisfied dependency expressed through field 'keluargaMapper': Error creating bean with name 'keluargaMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\KeluargaMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.apap.umarfarisi.tugas.satu.mapper.KeluargaMapper.getKeluargaDB; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'keluargaMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\KeluargaMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.apap.umarfarisi.tugas.satu.mapper.KeluargaMapper.getKeluargaDB; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'keluargaService': Unsatisfied dependency expressed through field 'keluargaMapper': Error creating bean with name 'keluargaMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\KeluargaMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.apap.umarfarisi.tugas.satu.mapper.KeluargaMapper.getKeluargaDB; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'keluargaMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\KeluargaMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.apap.umarfarisi.tugas.satu.mapper.KeluargaMapper.getKeluargaDB
+2017-10-20 17:09:26.904  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2017-10-20 17:09:26.916 ERROR 7600 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'keluargaController': Unsatisfied dependency expressed through field 'keluargaService': Error creating bean with name 'keluargaService': Unsatisfied dependency expressed through field 'keluargaMapper': Error creating bean with name 'keluargaMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\KeluargaMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.apap.umarfarisi.tugas.satu.mapper.KeluargaMapper.getKeluargaDB; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'keluargaMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\KeluargaMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.apap.umarfarisi.tugas.satu.mapper.KeluargaMapper.getKeluargaDB; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'keluargaService': Unsatisfied dependency expressed through field 'keluargaMapper': Error creating bean with name 'keluargaMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\KeluargaMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.apap.umarfarisi.tugas.satu.mapper.KeluargaMapper.getKeluargaDB; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'keluargaMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\KeluargaMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.apap.umarfarisi.tugas.satu.mapper.KeluargaMapper.getKeluargaDB
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:569) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:349) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:776) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:861) ~[spring-context-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541) ~[spring-context-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at com.apap.umarfarisi.tugas.satu.ApapUmarFarisiTugasSatuApplication.main(ApapUmarFarisiTugasSatuApplication.java:12) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'keluargaService': Unsatisfied dependency expressed through field 'keluargaMapper': Error creating bean with name 'keluargaMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\KeluargaMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.apap.umarfarisi.tugas.satu.mapper.KeluargaMapper.getKeluargaDB; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'keluargaMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\KeluargaMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.apap.umarfarisi.tugas.satu.mapper.KeluargaMapper.getKeluargaDB
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:569) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:349) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:207) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1214) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1054) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1019) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:566) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'keluargaMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\KeluargaMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.apap.umarfarisi.tugas.satu.mapper.KeluargaMapper.getKeluargaDB
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:207) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1214) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1054) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1019) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:566) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	... 38 common frames omitted
+Caused by: java.lang.IllegalArgumentException: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.apap.umarfarisi.tugas.satu.mapper.KeluargaMapper.getKeluargaDB
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:84) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44) ~[spring-tx-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	... 49 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.apap.umarfarisi.tugas.satu.mapper.KeluargaMapper.getKeluargaDB
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:837) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:809) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.session.Configuration.addMappedStatement(Configuration.java:633) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:302) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parseStatement(MapperAnnotationBuilder.java:325) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:130) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:706) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:81) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	... 52 common frames omitted
+
+2017-10-20 17:10:58.036  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:10:58.036  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:10:58.374  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:10:58.374  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:10:58.379  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:10:58.595  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.584 seconds (JVM running for 1532.037)
+2017-10-20 17:11:08.221  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:11:08.221  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:11:08.581  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:11:08.582  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:11:08.588  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:11:08.820  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.624 seconds (JVM running for 1542.261)
+2017-10-20 17:11:11.922  INFO 7600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-20 17:13:19.004 ERROR 7600 --- [http-nio-8080-exec-6] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-6] Exception processing template "response-data-keluarga": Exception evaluating SpringEL expression: "keluarga.tidakAktif" (response-data-keluarga:38)
+2017-10-20 17:13:19.007 ERROR 7600 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "keluarga.tidakAktif" (response-data-keluarga:38)] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1008E:(pos 9): Property or field 'tidakAktif' cannot be found on object of type 'com.apap.umarfarisi.tugas.satu.model.KeluargaViewModel' - maybe not public?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:224) ~[spring-expression-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:94) ~[spring-expression-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:46) ~[spring-expression-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:374) ~[spring-expression-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:88) ~[spring-expression-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:120) ~[spring-expression-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:267) ~[spring-expression-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.thymeleaf.spring4.expression.SpelVariableExpressionEvaluator.evaluate(SpelVariableExpressionEvaluator.java:139) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariable(VariableExpression.java:154) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:59) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:103) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:133) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.ConditionalExpression.executeConditional(ConditionalExpression.java:202) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.ComplexExpression.executeComplex(ComplexExpression.java:70) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:107) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:133) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:120) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.standard.processor.attr.AbstractStandardTextChildModifierAttrProcessor.getText(AbstractStandardTextChildModifierAttrProcessor.java:68) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.processor.attr.AbstractTextChildModifierAttrProcessor.getModifiedChildren(AbstractTextChildModifierAttrProcessor.java:59) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.processor.attr.AbstractChildrenModifierAttrProcessor.processAttribute(AbstractChildrenModifierAttrProcessor.java:59) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.processor.attr.AbstractAttrProcessor.doProcess(AbstractAttrProcessor.java:87) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.processor.AbstractProcessor.process(AbstractProcessor.java:212) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Node.applyNextProcessor(Node.java:1017) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:972) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Document.process(Document.java:93) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1155) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_131]
+
+2017-10-20 17:14:35.582  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:14:35.582  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:14:35.899  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:14:35.899  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:14:35.904  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:14:36.119  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.56 seconds (JVM running for 1749.561)
+2017-10-20 17:14:37.742  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:14:37.743  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:14:38.062  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:14:38.062  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:14:38.068  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:14:38.283  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.565 seconds (JVM running for 1751.725)
+2017-10-20 17:15:08.910  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:15:08.910  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:15:09.226  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:15:09.226  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:15:09.231  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:15:09.454  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.568 seconds (JVM running for 1782.895)
+2017-10-20 17:15:43.864  INFO 7600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-20 17:16:18.492  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:16:18.492  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:16:18.808  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:16:18.809  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:16:18.814  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:16:19.017  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.548 seconds (JVM running for 1852.458)
+2017-10-20 17:16:24.597  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:16:24.597  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:16:24.945  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:16:24.945  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:16:24.951  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:16:25.158  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.584 seconds (JVM running for 1858.599)
+2017-10-20 17:16:26.411  INFO 7600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-20 17:16:43.153  WARN 7600 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'nik' is not present
+2017-10-20 17:22:44.009  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:22:44.009  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:22:44.342  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:22:44.342  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:22:44.388  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:22:44.606  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.621 seconds (JVM running for 2238.047)
+2017-10-20 17:23:45.802  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:23:45.802  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:23:46.131  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:23:46.131  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:23:46.180  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:23:46.391  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.611 seconds (JVM running for 2299.833)
+2017-10-20 17:23:53.017  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:23:53.018  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:23:53.332  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:23:53.332  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:23:53.338  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:23:53.547  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.553 seconds (JVM running for 2306.988)
+2017-10-20 17:24:01.089  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:24:01.090  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:24:01.434  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:24:01.434  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:24:01.440  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:24:01.649  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.584 seconds (JVM running for 2315.09)
+2017-10-20 17:24:16.210  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:24:16.210  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:24:16.540  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:24:16.540  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:24:16.590  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:24:16.797  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.61 seconds (JVM running for 2330.238)
+2017-10-20 17:24:38.141  INFO 7600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-20 17:25:59.732  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:25:59.733  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:26:00.081  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:26:00.081  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:26:00.086  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:26:00.289  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.58 seconds (JVM running for 2433.73)
+2017-10-20 17:35:24.950  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:35:24.950  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:35:25.308  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:35:25.309  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:35:25.314  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:35:25.520  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.595 seconds (JVM running for 2998.995)
+2017-10-20 17:35:34.514  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:35:34.515  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:35:34.873  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:35:34.873  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:35:34.877  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:35:35.077  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.585 seconds (JVM running for 3008.552)
+2017-10-20 17:35:42.312  INFO 7600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-20 17:37:00.003  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:37:00.003  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:37:00.362  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:37:00.362  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:37:00.367  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:37:00.579  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.598 seconds (JVM running for 3094.053)
+2017-10-20 17:37:03.537  INFO 7600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-20 17:37:42.301  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:37:42.301  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:37:42.658  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:37:42.659  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:37:42.664  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:37:42.888  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.61 seconds (JVM running for 3136.363)
+2017-10-20 17:37:44.917  INFO 7600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-20 17:40:49.116  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:40:49.116  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:40:49.478  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:40:49.478  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:40:49.483  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:40:49.699  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.607 seconds (JVM running for 3323.174)
+2017-10-20 17:40:54.849  INFO 7600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-20 17:42:16.534  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:42:16.535  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:42:16.915  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:42:16.915  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:42:16.921  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:42:17.132  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.622 seconds (JVM running for 3410.607)
+2017-10-20 17:42:21.706  INFO 7600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-20 17:43:47.072  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:43:47.072  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:43:47.416  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:43:47.416  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:43:47.421  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:43:47.624  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.576 seconds (JVM running for 3501.099)
+2017-10-20 17:46:36.780  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:46:36.781  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:46:37.163  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:46:37.163  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:46:37.168  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:46:37.385  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.628 seconds (JVM running for 3670.86)
+2017-10-20 17:46:40.586  INFO 7600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-20 17:49:19.554  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:49:19.554  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:49:19.918  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:49:19.918  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:49:19.923  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:49:20.138  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.607 seconds (JVM running for 3833.613)
+2017-10-20 17:49:28.098  INFO 7600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-20 17:49:52.949  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:49:52.950  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:49:53.337  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:49:53.337  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:49:53.343  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:49:53.553  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.627 seconds (JVM running for 3867.028)
+2017-10-20 17:49:57.386  INFO 7600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-20 17:52:06.548  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:52:06.548  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:52:06.929  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:52:06.929  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:52:06.936  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:52:07.155  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.629 seconds (JVM running for 4000.63)
+2017-10-20 17:52:10.282  INFO 7600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-20 17:53:16.972  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7600 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 17:53:16.972  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 17:53:17.328  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 17:53:17.329  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 17:53:17.333  INFO 7600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 17:53:17.546  INFO 7600 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.597 seconds (JVM running for 4071.021)
+2017-10-20 17:53:21.968  INFO 7600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'

@@ -32,6 +32,12 @@
 			<td>Kota</td>
 			<td data-th-text="${keluarga.namaKota}"></td>
 		</tr>
+		
+		<tr>
+			<td>Status</td>
+			<td data-th-text="${keluarga.tidakBerlaku} ? 'Tidak Berlaku' : 'Berlaku'"></td>
+		</tr>
+		
 	</table>
 	
 	<hr></hr>
