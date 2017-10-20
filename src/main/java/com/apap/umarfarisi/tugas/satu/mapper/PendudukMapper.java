@@ -8,8 +8,6 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
-import com.apap.umarfarisi.tugas.satu.model.KeluargaFormModel;
-import com.apap.umarfarisi.tugas.satu.model.PendudukFormModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukDBModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukViewModel;
 
@@ -32,7 +30,7 @@ public interface PendudukMapper {
 	@Insert("insert into penduduk (nik, nama, tempat_lahir, tanggal_lahir, jenis_kelamin, is_wni, id_keluarga, agama, pekerjaan, status_perkawinan, status_dalam_keluarga, golongan_darah, is_wafat) "
 			+ "VALUES ('${pendudukForm.nik}', '${pendudukForm.nama}', '${pendudukForm.tempatLahir}', '${pendudukForm.tanggalLahir}', ${pendudukForm.jenisKelamin}, ${pendudukForm.wni}, '${pendudukForm.idKeluarga}', "
 			+ "'${pendudukForm.agama}', '${pendudukForm.pekerjaan}', '${pendudukForm.statusPerkawinan}', '${pendudukForm.statusDalamKeluarga}', '${pendudukForm.golonganDarah}', ${pendudukForm.wafat});")
-	public void addPenduduk(@Param("pendudukForm") PendudukFormModel pendudukForm);
+	public void addPenduduk(@Param("pendudukForm") PendudukDBModel pendudukForm);
 	
 	
 	@Select("select nik from penduduk where nik like '${nik_pattern}%' order by nik desc limit 1;")
@@ -43,13 +41,13 @@ public interface PendudukMapper {
 			+ "is_wni as wni, id_keluarga as idKeluarga, agama, pekerjaan, status_perkawinan as statusPerkawinan, "
 			+ "status_dalam_keluarga as statusDalamKeluarga, golongan_darah as golonganDarah, is_wafat as wafat "
 			+ "from penduduk where nik = #{nik}")
-	public PendudukFormModel getPendudukFrom(@Param("nik") String nik);
+	public PendudukDBModel getPendudukFrom(@Param("nik") String nik);
 
 	@Update("update penduduk set nik = ${pendudukForm.nik}, nama = '${pendudukForm.nama}', tempat_lahir = '${pendudukForm.tempatLahir}', tanggal_lahir = '${pendudukForm.tanggalLahir}', jenis_kelamin = ${pendudukForm.jenisKelamin},"
 			+ "is_wni = ${pendudukForm.wni}, id_keluarga = '${pendudukForm.idKeluarga}', agama = '${pendudukForm.agama}', pekerjaan = '${pendudukForm.pekerjaan}', status_perkawinan = '${pendudukForm.statusPerkawinan}', "
 			+ "status_dalam_keluarga = '${pendudukForm.statusDalamKeluarga}', golongan_darah = '${pendudukForm.golonganDarah}', is_wafat = ${pendudukForm.wafat} "
 			+ "where nik = #{nik}")
-	public void updatePenduduk(@Param("nik") String nik, @Param("pendudukForm") PendudukFormModel pendudukForm);
+	public void updatePenduduk(@Param("nik") String nik, @Param("pendudukForm") PendudukDBModel pendudukForm);
 	
 
 }

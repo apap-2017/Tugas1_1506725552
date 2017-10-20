@@ -14,7 +14,6 @@ import com.apap.umarfarisi.tugas.satu.model.KecamatanDBModel;
 import com.apap.umarfarisi.tugas.satu.model.KelurahanDBModel;
 import com.apap.umarfarisi.tugas.satu.model.KotaDBModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukDBModel;
-import com.apap.umarfarisi.tugas.satu.model.PendudukFormModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukViewModel;
 
 @Service
@@ -33,7 +32,7 @@ public class PendudukService {
 		return pendudukMapper.getPendudukView(nik);
 	}
 	
-	public String addDataPenduduk(PendudukFormModel pendudukForm) {
+	public String addDataPenduduk(PendudukDBModel pendudukForm) {
 		String nik = generateNIK(pendudukForm, null);
 		pendudukForm.setNik(nik);
 		pendudukMapper.addPenduduk(pendudukForm);
@@ -41,13 +40,13 @@ public class PendudukService {
 		return nik;
 	}
 
-	public PendudukFormModel getDataPendudukForForm(String nik) {
+	public PendudukDBModel getDataPendudukForForm(String nik) {
 		
 		return pendudukMapper.getPendudukFrom(nik);
 
 	}
 
-	public String updateDataPenduduk(String nik, PendudukFormModel pendudukForm) {
+	public String updateDataPenduduk(String nik, PendudukDBModel pendudukForm) {
 		String newNik = generateNIK(pendudukForm, nik);
 		pendudukForm.setNik(newNik);
 		pendudukMapper.updatePenduduk(nik, pendudukForm);
@@ -55,7 +54,7 @@ public class PendudukService {
 	}
 
 	public boolean updateDataStatusKematianPenduduk(String nik) {
-		PendudukFormModel pendudukForm = pendudukMapper.getPendudukFrom(nik); //impossible null
+		PendudukDBModel pendudukForm = pendudukMapper.getPendudukFrom(nik); //impossible null
 		pendudukForm.setWafat( !pendudukForm.isWafat() );
 		
 		pendudukMapper.updatePenduduk(nik, pendudukForm);
@@ -93,7 +92,7 @@ public class PendudukService {
 		return null;
 	}
 	
-	private String generateNIK(PendudukFormModel pendudukForm, String oldNik) {
+	private String generateNIK(PendudukDBModel pendudukForm, String oldNik) {
 		String kodeKecamatan = kecamatanMapper.getKodeKecamatanByIdKeluarga(pendudukForm.getIdKeluarga());
 		String sixDigitFirst = kodeKecamatan.substring(0, kodeKecamatan.length() - 1);
 		

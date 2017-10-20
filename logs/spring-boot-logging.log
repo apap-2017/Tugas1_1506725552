@@ -10959,3 +10959,91 @@ org.thymeleaf.exceptions.TemplateProcessingException: The expression used for ob
 2017-10-20 13:49:23.303  INFO 8756 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
 2017-10-20 13:49:23.303  INFO 8756 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
 2017-10-20 13:49:23.490  INFO 8756 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.547 seconds (JVM running for 3529.095)
+2017-10-20 13:51:21.924  INFO 8756 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 8756 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 13:51:21.924  INFO 8756 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 13:51:22.254  INFO 8756 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 13:51:22.254  INFO 8756 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 13:51:22.301  INFO 8756 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 13:51:22.379  WARN 8756 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'keluargaController': Unsatisfied dependency expressed through field 'keluargaService': Error creating bean with name 'keluargaService': Unsatisfied dependency expressed through field 'pendudukMapper': Error creating bean with name 'pendudukMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\PendudukMapper.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: PendudukFormModel; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pendudukMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\PendudukMapper.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: PendudukFormModel; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'keluargaService': Unsatisfied dependency expressed through field 'pendudukMapper': Error creating bean with name 'pendudukMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\PendudukMapper.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: PendudukFormModel; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pendudukMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\PendudukMapper.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: PendudukFormModel
+2017-10-20 13:51:22.394  INFO 8756 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2017-10-20 13:51:22.394 ERROR 8756 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'keluargaController': Unsatisfied dependency expressed through field 'keluargaService': Error creating bean with name 'keluargaService': Unsatisfied dependency expressed through field 'pendudukMapper': Error creating bean with name 'pendudukMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\PendudukMapper.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: PendudukFormModel; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pendudukMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\PendudukMapper.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: PendudukFormModel; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'keluargaService': Unsatisfied dependency expressed through field 'pendudukMapper': Error creating bean with name 'pendudukMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\PendudukMapper.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: PendudukFormModel; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pendudukMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\PendudukMapper.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: PendudukFormModel
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:569) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:349) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:776) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:861) ~[spring-context-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541) ~[spring-context-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at com.apap.umarfarisi.tugas.satu.ApapUmarFarisiTugasSatuApplication.main(ApapUmarFarisiTugasSatuApplication.java:12) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'keluargaService': Unsatisfied dependency expressed through field 'pendudukMapper': Error creating bean with name 'pendudukMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\PendudukMapper.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: PendudukFormModel; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pendudukMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\PendudukMapper.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: PendudukFormModel
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:569) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:349) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:207) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1214) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1054) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1019) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:566) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pendudukMapper' defined in file [D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04\target\classes\com\apap\umarfarisi\tugas\satu\mapper\PendudukMapper.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: PendudukFormModel
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:207) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1214) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1054) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1019) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:566) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	... 38 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: PendudukFormModel
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_131]
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.Class.privateGetPublicMethods(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.Class.getMethods(Unknown Source) ~[na:1.8.0_131]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:125) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:706) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:81) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44) ~[spring-tx-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574) ~[spring-beans-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	... 49 common frames omitted
+Caused by: java.lang.ClassNotFoundException: PendudukFormModel
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_131]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:151) ~[spring-boot-devtools-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_131]
+	... 60 common frames omitted
+
