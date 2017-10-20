@@ -16,7 +16,6 @@ import com.apap.umarfarisi.tugas.satu.model.KecamatanDBModel;
 import com.apap.umarfarisi.tugas.satu.model.KelurahanDBModel;
 import com.apap.umarfarisi.tugas.satu.model.KotaDBModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukDBModel;
-import com.apap.umarfarisi.tugas.satu.model.PendudukFormModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukViewModel;
 import com.apap.umarfarisi.tugas.satu.service.PendudukService;
 
@@ -39,14 +38,14 @@ public class PendudukController {
 	
 	@RequestMapping(value = "/penduduk/tambah" , method = RequestMethod.GET)
 	public String formTambahPenduduk(Model model) {
-		PendudukFormModel pendudukForm = new PendudukFormModel();
+		PendudukDBModel pendudukForm = new PendudukDBModel();
 		model.addAttribute("pendudukForm", pendudukForm);
 		return "form-tambah-penduduk";
 		
 	}
 	
 	@RequestMapping(value = "/penduduk/tambah" , method = RequestMethod.POST)
-	public String formTambahPenduduk(@ModelAttribute("pendudukForm") PendudukFormModel pendudukForm,
+	public String formTambahPenduduk(@ModelAttribute("pendudukForm") PendudukDBModel pendudukForm,
 			Model model) {
 		String nik = pendudukService.addDataPenduduk(pendudukForm);
 		model.addAttribute("nik", nik);
@@ -56,7 +55,7 @@ public class PendudukController {
 	@RequestMapping(value = "/penduduk/ubah/{nik}", method = RequestMethod.GET)
 	public String formUpdatePenduduk(@PathVariable(value = "nik") String nik, Model model) {
 		
-		PendudukFormModel pendudukForm = pendudukService.getDataPendudukForForm(nik);
+		PendudukDBModel pendudukForm = pendudukService.getDataPendudukForForm(nik);
 		
 		if(pendudukForm != null) {
 			model.addAttribute("pendudukForm", pendudukForm);
@@ -69,7 +68,7 @@ public class PendudukController {
 	}
 	
 	@RequestMapping(value = "/penduduk/ubah/{nik}" , method = RequestMethod.POST)
-	public String formUpdatePenduduk(@PathVariable(value = "nik") String nik, Model model, @ModelAttribute("pendudukForm") PendudukFormModel pendudukForm) {
+	public String formUpdatePenduduk(@PathVariable(value = "nik") String nik, Model model, @ModelAttribute("pendudukForm") PendudukDBModel pendudukForm) {
 		
 		String newNik = pendudukService.updateDataPenduduk(nik, pendudukForm);
 		
@@ -80,13 +79,9 @@ public class PendudukController {
 	@RequestMapping(value = "/penduduk/{nik}" , method = RequestMethod.GET)
 	public String formUbahStatusKematianPenduduk(@PathVariable(value = "nik") String nik, Model model) {
 		
-		PendudukFormModel pendudukForm = pendudukService.getDataPendudukForForm(nik);
+		PendudukDBModel pendudukForm = pendudukService.getDataPendudukForForm(nik);
 		
 		model.addAttribute("nik", nik);
-		
-
-		System.out.println("-1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> nik " + pendudukForm.getNik());
-		System.out.println("0 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> is wafat " + pendudukForm.isWafat());
 		
 		if(pendudukForm != null) {
 			model.addAttribute("status", pendudukForm.isWafat() ? "aktif" : "tidak aktif");
