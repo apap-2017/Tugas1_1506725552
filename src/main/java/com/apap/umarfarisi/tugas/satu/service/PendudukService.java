@@ -109,8 +109,7 @@ public class PendudukService {
 
 	public List<PendudukDBModel> getDaftarPendudukBerdasarkanTempatYangDipilih(Long idKota, Long idKecamatan,
 			Long idKelurahan) {
-		// TODO Auto-generated method stub
-		return null;
+		return pendudukMapper.getAllPendudukByIdKelurahan(idKelurahan);
 	}
 	
 }

@@ -48,6 +48,12 @@ public interface PendudukMapper {
 			+ "status_dalam_keluarga = '${pendudukForm.statusDalamKeluarga}', golongan_darah = '${pendudukForm.golonganDarah}', is_wafat = ${pendudukForm.wafat} "
 			+ "where nik = #{nik}")
 	public void updatePenduduk(@Param("nik") String nik, @Param("pendudukForm") PendudukDBModel pendudukForm);
+
+	@Select("select p.nik, p.nama, p.tempat_lahir as tempatLahir, p.tanggal_lahir as tanggalLahir, p.jenis_kelamin as jenisKelamin, "
+			+ "p.is_wni as wni, p.id_keluarga as idKeluarga, p.agama, p.pekerjaan, p.status_perkawinan as statusPerkawinan, "
+			+ "p.status_dalam_keluarga as statusDalamKeluarga, p.golongan_darah as golonganDarah, p.is_wafat as wafat "
+			+ "from penduduk p, keluarga k, kelurahan kel where p.id_keluarga = k.id &&  k.id_kelurahan = kel.id && kel.id = #{id_kelurahan}")
+	public List<PendudukDBModel> getAllPendudukByIdKelurahan(@Param("id_kelurahan") Long idKelurahan);
 	
 
 }

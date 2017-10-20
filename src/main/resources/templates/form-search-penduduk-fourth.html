@@ -7,7 +7,6 @@
 
 <h1>Lihat Data Penduduk Berdasarkan Kecamatan di Kota Jakarta Selatan</h1>
 
-<form action="/penduduk/cari" method="get">
 	<h3>Kota</h3>
 	<input hidden="true" th:field="${kota.id}"></input>
 	<input th:value="${kota.namaKota}" ></input>
@@ -18,7 +17,33 @@
 	<h3>Kelurahan</h3>
 	<input hidden="true" th:field="${kelurahan.id}"></input>
 	<input th:value="${kelurahan.namaKelurahan}" ></input>
-</form>
+	
+	<table>
+		<tr>
+			<th>Nama</th>
+			<th>NIK</th>
+			<th>Tempat, Tanggal Lahir</th>
+			<th>Jenis Kelamin</th>
+			<th>Kewarganegaraan</th>
+			<th>Agama</th>
+			<th>Pekerjaan</th>
+			<th>Status Perkawinan</th>
+			<th>Golongan Darah</th>
+			<th>Status</th>
+		</tr>
+		<tr data-th-each="penduduk : ${penduduks}" th:object= "${penduduk}">
+			<td data-th-text="*{nama}"></td>
+			<td data-th-text="*{nik}"></td>
+			<td data-th-text="*{tempatLahir} + ', ' + *{tanggalLahir}"></td>
+			<td data-th-text="*{jenisKelamin}"></td>
+			<td data-th-text="*{wni} ? 'WNI' : 'WNA'"></td>
+			<td data-th-text="*{agama}"></td>
+			<td data-th-text="*{pekerjaan}"></td>
+			<td data-th-text="*{statusPerkawinan}"></td>
+			<td data-th-text="*{golonganDarah}"></td>
+			<td data-th-text="*{wafat} ? 'Meniggal' : 'Hidup'"></td>
+		</tr>
+	</table>
 
 </body>
 </html>
