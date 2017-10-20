@@ -24,7 +24,8 @@ public interface PendudukMapper {
 			+ "where p.id_keluarga = ka.id and ka.id_kelurahan = khan.id and khan.id_kecamatan = ktan.id and ktan.id_kota = k.id and p.nik = ${nik} ;")
 	public PendudukViewModel getPendudukView(@Param("nik") String nik);
 	
-	@Select("select nama, nik, jenis_kelamin as jenisKelamin, tempat_lahir as tempatLahir, tanggal_lahir as tanggalLahir, agama, pekerjaan, status_perkawinan as statusPerkawinan, status_dalam_keluarga as statusDalamKeluarga, is_wni as isWni "
+	@Select("select nama, nik, jenis_kelamin as jenisKelamin, tempat_lahir as tempatLahir, tanggal_lahir as tanggalLahir, agama, pekerjaan, status_perkawinan as statusPerkawinan, "
+			+ "golongan_darah as golonganDarah, status_dalam_keluarga as statusDalamKeluarga, is_wni as isWni "
 			+ "from penduduk where id_keluarga = ${id_keluarga};")
 	public List<PendudukDBModel> getAllPendudukByIdKeluarga(@Param("id_keluarga") String idKeluarga);
 	

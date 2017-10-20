@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Data Keluarga</title>
+</head>
+<body>
+
+	<h1 th:text="'Lihat Data Keluarga - ' + ${keluarga.nkk}"></h1>
+	
+	<table>
+		<tr>
+			<td>NKK</td>
+			<td data-th-text="${keluarga.nkk}"></td>
+		</tr>
+		<tr>
+			<td>Alamat</td>
+			<td data-th-text="${keluarga.alamat}"></td>
+		</tr>
+		<tr>
+			<td>RT/RW</td>
+			<td data-th-text="${keluarga.rt} + '/' + ${keluarga.rw}"></td>
+		</tr>
+		<tr>
+			<td>Kelurahan/Desa</td>
+			<td data-th-text="${keluarga.namaKelurahan}"></td>
+		</tr>
+		<tr>
+			<td>Kecamatan</td>
+			<td data-th-text="${keluarga.namaKecamatan}"></td>
+		</tr>
+		<tr>
+			<td>Kota</td>
+			<td data-th-text="${keluarga.namaKota}"></td>
+		</tr>
+	</table>
+	
+	<hr></hr>
+	
+	<table>
+		<tr>
+			<th>No</th>
+			<th>Nama Lengkap</th>
+			<th>NIK</th>
+			<th>Tempat Lahir</th>
+			<th>Tanggal Lahir</th>
+			<th>Agama</th>
+			<th>Jenis Kelamin</th>
+			<th>Golongan Darah</th>
+			<th>Pekerjaan</th>
+			<th>Status Perkawinan</th>
+			<th>Status Dalam Keluarga</th>
+			<th>Kewarganegaraan</th>
+		</tr>
+		<tr data-th-each = "anggotaKeluarga : ${keluarga.anggotaKeluargas}">
+			<td>1</td>
+			<td data-th-text="${anggotaKeluarga.nama}"></td>
+			<td data-th-text="${anggotaKeluarga.nik}"></td>
+			<td data-th-text="${anggotaKeluarga.tempatLahir}"></td>
+			<td data-th-text="${anggotaKeluarga.tanggalLahir}"></td>
+			<td data-th-text="${anggotaKeluarga.agama}"></td>
+			<td data-th-text="${anggotaKeluarga.jenisKelamin == 0} ? 'Pria' : 'Wanita'"></td>
+			<td data-th-text="${anggotaKeluarga.golonganDarah}"></td>
+			<td data-th-text="${anggotaKeluarga.pekerjaan}"></td>
+			<td data-th-text="${anggotaKeluarga.statusPerkawinan}"></td>
+			<td data-th-text="${anggotaKeluarga.statusDalamKeluarga}"></td>
+			<td data-th-text="${anggotaKeluarga.wni} ? 'WNI' : 'WNA'"></td>
+		</tr>
+	</table>
+
+
+</body>
+</html>

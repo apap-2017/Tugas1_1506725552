@@ -28,11 +28,11 @@ public class KeluargaController {
 		
 		if(keluarga != null) {
 			model.addAttribute("keluarga", keluarga);
-			return "response-data-keluarga-berdasarkan-kk";
+			return "response-data-keluarga";
 		}
 		
 		model.addAttribute("nkk", nkk);		
-		return "response-failed-data-keluarga-berdasarkan-kk";
+		return "response-failed-data-keluarga";
 	}
 	
 	@RequestMapping(value = "/keluarga/tambah" , method = RequestMethod.GET)

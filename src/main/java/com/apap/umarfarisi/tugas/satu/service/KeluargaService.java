@@ -39,9 +39,9 @@ public class KeluargaService {
 			List<PendudukDBModel> penduduks = pendudukMapper.getAllPendudukByIdKeluarga(keluarga.getId());
 			
 			if(penduduks != null)
-				keluarga.setPendudukDBModels(penduduks);
+				keluarga.setAnggotaKeluargas(penduduks);
 			else
-				keluarga.setPendudukDBModels(new ArrayList<>());
+				keluarga.setAnggotaKeluargas(new ArrayList<>());
 			
 			return keluarga;
 		}
