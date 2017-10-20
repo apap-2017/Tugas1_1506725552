@@ -10262,3 +10262,10 @@ org.springframework.beans.NotReadablePropertyException: Invalid property 'pendud
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.4.jar:8.5.4]
 	at java.lang.Thread.run(Unknown Source) [na:1.8.0_131]
 
+2017-10-20 12:50:35.174  INFO 8756 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 8756 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-20 12:50:35.221  INFO 8756 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-20 12:50:36.304  INFO 8756 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-20 12:50:36.304  INFO 8756 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-20 12:50:36.351  INFO 8756 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-20 12:50:37.220  INFO 8756 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 2.233 seconds (JVM running for 2.812)
+2017-10-20 12:50:50.682  INFO 8756 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
