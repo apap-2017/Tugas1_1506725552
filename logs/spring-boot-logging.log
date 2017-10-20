@@ -16010,3 +16010,10 @@ org.xml.sax.SAXParseException: Element type "span" must be followed by either at
 2017-10-21 01:13:36.939  INFO 5732 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
 2017-10-21 01:13:37.152  INFO 5732 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.59 seconds (JVM running for 4785.142)
 2017-10-21 01:13:57.382  INFO 5732 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-21 01:20:09.072  INFO 5732 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 5732 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-21 01:20:09.072  INFO 5732 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-21 01:20:09.474  INFO 5732 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-21 01:20:09.474  INFO 5732 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-21 01:20:09.491  INFO 5732 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-21 01:20:09.731  INFO 5732 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.679 seconds (JVM running for 5177.72)
+2017-10-21 01:20:19.408  INFO 5732 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'

@@ -75,7 +75,7 @@ public class KeluargaController {
 			BindingResult bindingResult, Model model) {
 		
 		if(bindingResult.hasErrors()) {
-			return "form-tambah-keluarga";
+			return "form-ubah-keluarga";
 		}
 		
 		String newNkk = keluargaService.updateDataKeluarga(nkk, keluargaForm);
