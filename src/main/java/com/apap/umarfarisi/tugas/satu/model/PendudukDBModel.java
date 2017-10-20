@@ -16,7 +16,6 @@ import lombok.ToString;
 public class PendudukDBModel {
 	
 	private long id;
-	@NotEmpty
 	private String nik;
 	@NotEmpty
 	private String nama;

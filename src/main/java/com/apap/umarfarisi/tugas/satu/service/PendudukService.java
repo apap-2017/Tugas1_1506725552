@@ -39,9 +39,10 @@ public class PendudukService {
 	
 	public String addDataPenduduk(PendudukDBModel pendudukForm) {
 		String nik = PendudukUtils.generateNIK(kecamatanMapper, pendudukMapper, pendudukForm.getIdKeluarga(), pendudukForm.getTanggalLahir(), pendudukForm.getJenisKelamin(), null);
-		
-		if(nik == null) {
-			return null;
+		if(nik == PendudukUtils.ERROR_BY_ID_KELUARGA 
+				|| nik == PendudukUtils.ERROR_BY_ID_TANGGAL_LAHIR) {
+			//return error message which is nik
+			return nik;
 		}
 		
 		pendudukForm.setNik(nik);
@@ -58,12 +59,14 @@ public class PendudukService {
 
 	public String updateDataPenduduk(String nik, PendudukDBModel pendudukForm) {
 		String newNik = PendudukUtils.generateNIK(kecamatanMapper, pendudukMapper, pendudukForm.getIdKeluarga(), pendudukForm.getTanggalLahir(), pendudukForm.getJenisKelamin(), nik);
-		pendudukForm.setNik(newNik);
 		
-		if(newNik == null) {
-			return null;
+		if(newNik == PendudukUtils.ERROR_BY_ID_KELUARGA 
+				|| newNik == PendudukUtils.ERROR_BY_ID_TANGGAL_LAHIR) {
+			//return error message which is newNik
+			return newNik;
 		}
 		
+		pendudukForm.setNik(newNik);
 		pendudukMapper.updatePenduduk(nik, pendudukForm);
 		return newNik;
 	}

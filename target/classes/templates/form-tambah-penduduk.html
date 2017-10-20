@@ -7,7 +7,7 @@
 
 	<h1>Tambah Penduduk</h1>
 	
-	<h3 th:if="${error_id_keluarga}" ><font color="red" >id keluarga tidak ditemukan</font></h3>
+	<h3 th:if="${is_nik_error}" th:text="${nik_error_message}"></h3>
 
 	<form action="/penduduk/tambah" method="post" th:object="${pendudukForm}">
 		<h3>Masukkan Nama</h3>
@@ -66,7 +66,7 @@
 		</select>
 				
 		<h3>Id Keluarga</h3>
-		<input type="text" th:field="*{idKeluarga}"/>
+		<input type="number" th:field="*{idKeluarga}"/>
 		
 		<div>
 			<button type = "submit">SIMPAN</button>

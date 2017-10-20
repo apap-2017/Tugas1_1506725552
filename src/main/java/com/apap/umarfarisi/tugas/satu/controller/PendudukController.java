@@ -21,6 +21,7 @@ import com.apap.umarfarisi.tugas.satu.model.KotaDBModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukDBModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukViewModel;
 import com.apap.umarfarisi.tugas.satu.service.PendudukService;
+import com.apap.umarfarisi.tugas.satu.utils.PendudukUtils;
 
 @Controller
 public class PendudukController {
@@ -59,8 +60,9 @@ public class PendudukController {
 		
 		String nik = pendudukService.addDataPenduduk(pendudukForm);
 		
-		if(nik == null) {
-			model.addAttribute("error_id_keluarga", true);
+		if(nik == PendudukUtils.ERROR_BY_ID_KELUARGA || nik == PendudukUtils.ERROR_BY_ID_TANGGAL_LAHIR) {
+			model.addAttribute("is_nik_error", true);
+			model.addAttribute("nik_error_message", nik);
 			return "form-tambah-penduduk";
 		}
 		
@@ -94,9 +96,10 @@ public class PendudukController {
 		
 		String newNik = pendudukService.updateDataPenduduk(nik, pendudukForm);
 		
-		if(newNik == null) {
-			model.addAttribute("error_id_keluarga", true);
-			return "form-tambah-penduduk";
+		if(newNik == PendudukUtils.ERROR_BY_ID_KELUARGA || newNik == PendudukUtils.ERROR_BY_ID_TANGGAL_LAHIR) {
+			model.addAttribute("is_nik_error", true);
+			model.addAttribute("nik_error_message", newNik);
+			return "form-ubah-penduduk";
 		}
 		
 		model.addAttribute("nik", newNik);
