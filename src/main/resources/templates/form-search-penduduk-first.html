@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Cari Penduduk</title>
+</head>
+<body>
+
+<h1>Lihat Data Penduduk Berdasarkan Kecamatan di Kota Jakarta Selatan</h1>
+
+<form action="/penduduk/cari" method="get">
+	<div>
+		<h3>Kota</h3>
+		<select th:name="id_kota">
+			<option th:text="${kota.namaKota}" th:value="${kota.id}" th:each="kota: ${kotas}">
+		</option>
+		</select>
+	</div>
+	<div>
+		<button type="submit">Lihat</button>
+	</div>
+</form>
+
+</body>
+</html>

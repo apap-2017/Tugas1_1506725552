@@ -95,16 +95,16 @@ public class PendudukService {
 		return kelurahanMappper.getAllKelurahanByIdKecamatan(idKecamatan);
 	}
 
-	public String getNamaKotaYangDipilih(Long idKota) {
-		return kotaMapper.getKota(idKota).getNamaKota();
+	public KotaDBModel getNamaKotaYangDipilih(Long idKota) {
+		return kotaMapper.getKota(idKota);
 	}
 	
-	public String getNamaKecamatanYangDipilih(Long idKecamatan) {
-		return kecamatanMapper.getKecamatan(idKecamatan).getNamaKecamatan();
+	public KecamatanDBModel getNamaKecamatanYangDipilih(Long idKecamatan) {
+		return kecamatanMapper.getKecamatan(idKecamatan);
 	}
 	
-	public String getNamaKelurahanYangDipilih(Long idKelurahan) {
-		return kelurahanMappper.getKelurahan(idKelurahan).getNamaKelurahan();
+	public KelurahanDBModel getNamaKelurahanYangDipilih(Long idKelurahan) {
+		return kelurahanMappper.getKelurahan(idKelurahan);
 	}
 
 	public List<PendudukDBModel> getDaftarPendudukBerdasarkanTempatYangDipilih(Long idKota, Long idKecamatan,

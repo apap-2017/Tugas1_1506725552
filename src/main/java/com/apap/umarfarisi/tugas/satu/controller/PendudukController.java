@@ -112,46 +112,44 @@ public class PendudukController {
 			
 			List<KotaDBModel> kotas = pendudukService.getDaftarKota();
 			model.addAttribute("kotas", kotas);
-			
-			return "TODO";
+			return "form-search-penduduk-first";
 			
 		}else if(idKota != null && idKecamatan == null && idKelurahan == null) { //second
 			
-			String selectedNamaKota = pendudukService.getNamaKotaYangDipilih(idKota);
+			KotaDBModel kota = pendudukService.getNamaKotaYangDipilih(idKota);
 			List<KecamatanDBModel> kecamatans = pendudukService.getDaftarKecamatanPadaSuatuKota(idKota);
-			model.addAttribute("selected_nama_kota", selectedNamaKota);
+			model.addAttribute("kota", kota);
 			model.addAttribute("kecamatans", kecamatans);
 			
-			return "TODO";
+			return "form-search-penduduk-second";
 			
 		}else if(idKota != null && idKecamatan != null && idKelurahan == null) { //third
 			
-			String selectedNamaKota = pendudukService.getNamaKotaYangDipilih(idKota);
-			String selectedNamaKecamatan = pendudukService.getNamaKecamatanYangDipilih(idKecamatan);
+			KotaDBModel kota = pendudukService.getNamaKotaYangDipilih(idKota);
+			KecamatanDBModel kecamatan = pendudukService.getNamaKecamatanYangDipilih(idKecamatan);
 			List<KelurahanDBModel> kelurahans = pendudukService.getDaftarKelurahanPadaSuatuKecamatan(idKecamatan);
-			model.addAttribute("selected_nama_kota", selectedNamaKota);
-			model.addAttribute("selected_nama_kecamatan", selectedNamaKecamatan);
+			model.addAttribute("kota", kota);
+			model.addAttribute("kecamatan", kecamatan);
 			model.addAttribute("kelurahans", kelurahans);
 			
-			return "TODO";
+			return "form-search-penduduk-third";
 			
-		}else if(idKota != null && idKecamatan != null && idKelurahan != null) { //last
+		}else{ //last
 			
-			String selectedNamaKota = pendudukService.getNamaKotaYangDipilih(idKota);
-			String selectedNamaKecamatan = pendudukService.getNamaKecamatanYangDipilih(idKecamatan);
-			String selectedNamaKelurahan = pendudukService.getNamaKelurahanYangDipilih(idKelurahan);
-			model.addAttribute("selected_nama_kota", selectedNamaKota);
-			model.addAttribute("selected_nama_kecamatan", selectedNamaKecamatan);
-			model.addAttribute("selected_nama_kelurahan", selectedNamaKelurahan);
+			KotaDBModel kota = pendudukService.getNamaKotaYangDipilih(idKota);
+			KecamatanDBModel kecamatan = pendudukService.getNamaKecamatanYangDipilih(idKecamatan);
+			KelurahanDBModel kelurahan = pendudukService.getNamaKelurahanYangDipilih(idKelurahan);
+			
+			model.addAttribute("kota", kota);
+			model.addAttribute("kecamatan", kecamatan);
+			model.addAttribute("kelurahan", kelurahan);
 			
 			List<PendudukDBModel> penduduks = pendudukService.getDaftarPendudukBerdasarkanTempatYangDipilih(idKota, idKecamatan, idKelurahan);
 			model.addAttribute("penduduks", penduduks);
 			
-			return "TODO";
+			return "form-search-penduduk-fourth";
 			
 		}
-		
-		return "TODO";
 	}
 	
 	
