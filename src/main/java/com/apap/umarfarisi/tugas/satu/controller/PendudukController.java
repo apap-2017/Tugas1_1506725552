@@ -31,7 +31,6 @@ public class PendudukController {
 		PendudukViewModel penduduk = pendudukService.getDataPendudukBerdasarkanNik(nik);
 		if(penduduk != null) {
 			model.addAttribute("penduduk", penduduk);
-			System.out.println(">>>>>>>>>>>>> "+penduduk.toString());
 			return "response-data-penduduk";
 		}
 		model.addAttribute("nik", nik);
@@ -39,7 +38,9 @@ public class PendudukController {
 	}
 	
 	@RequestMapping(value = "/penduduk/tambah" , method = RequestMethod.GET)
-	public String formTambahPenduduk(@ModelAttribute("pendudukForm") PendudukFormModel pendudukForm) {
+	public String formTambahPenduduk(Model model) {
+		PendudukFormModel pendudukForm = new PendudukFormModel();
+		model.addAttribute("pendudukForm", pendudukForm);
 		return "form-tambah-penduduk";
 		
 	}

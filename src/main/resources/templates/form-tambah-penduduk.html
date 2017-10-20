@@ -5,24 +5,24 @@
 </head>
 <body>
 
-	<form action="/penduduk/tambah" method="post" th:model="pendudukForm">
+	<form action="/penduduk/tambah" method="post" th:object="${pendudukForm}">
 		<h3>Masukkan Nama</h3>
-		<input type="text" th:field="*{pendudukForm.nama}"/>
+		<input type="text" th:field="*{nama}"/>
 		
 		<h3>Tempat Lahir</h3>
-		<input type="text" th:field="*{pendudukForm.tempatLahir}"/>
+		<input type="text" th:field="*{tempatLahir}"/>
 				
 		<h3>Tanggal Lahir</h3>
-		<input type="text" th:field="*{pendudukForm.tanggalLahir}" th:text="' Ex: 2017-05-24'"/>
+		<input type="text" th:field="*{tanggalLahir}" th:text="' Ex: 2017-05-24'"/>
 		
 		<h3>Jenis Kelamin</h3>
-		<select th:field="*{pendudukForm.jenisKelamin}">
+		<select th:field="*{jenisKelamin}">
 			<option value = "0" >Pria</option>
 			<option value ="1" >Wanita</option>
 		</select>
 				
 		<h3>Golongan Darah</h3>
-		<select th:field="*{pendudukForm.golonganDarah}">
+		<select th:field="*{golonganDarah}">
 			<option value = "AB+">AB+</option>
 			<option value = "A+">A+</option>
 			<option value = "B+">B+</option>
@@ -34,19 +34,19 @@
 		</select>
 				
 		<h3>Agama</h3>
-		<input type="text" th:field="*{pendudukForm.agama}"/>
+		<input type="text" th:field="*{agama}"/>
 				
 		<h3>Status Perkawinan</h3>
-		<input type="text" th:field="*{pendudukForm.statusPerkawinan}"/>
+		<input type="text" th:field="*{statusPerkawinan}"/>
 		
 		<h3>Status Dalam Keluarga</h3>
-		<input type="text" th:field="*{pendudukForm.statusDalamKeluarga}"/>
+		<input type="text" th:field="*{statusDalamKeluarga}"/>
 				
 		<h3>Pekerjaan</h3>
-		<input type="text" th:field="*{pendudukForm.pekerjaan}"/>
+		<input type="text" th:field="*{pekerjaan}"/>
 				
 		<h3>Kewarganegaraan</h3>
-		<select th:field="*{pendudukForm.wni}">
+		<select th:field="*{wni}">
 			<option value = "true">
 				WNI
 			</option>
@@ -56,13 +56,13 @@
 		</select>
 				
 		<h3>Status Kematian</h3>
-		<select th:field="*{pendudukForm.wafat}">
+		<select th:field="*{wafat}">
 			<option value = "false">Hidup</option>
 			<option value = "true">Meninggal</option>
 		</select>
 				
 		<h3>Id Keluarga</h3>
-		<input type="text" th:field="*{pendudukForm.idKeluarga}"/>
+		<input type="text" th:field="*{idKeluarga}"/>
 		
 		<div>
 			<button type = "submit">SIMPAN</button>
