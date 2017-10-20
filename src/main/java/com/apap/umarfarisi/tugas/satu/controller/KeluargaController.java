@@ -71,7 +71,12 @@ public class KeluargaController {
 	}
 	
 	@RequestMapping(value = "/keluarga/ubah/{nkk}", method = RequestMethod.POST)
-	public String formUbahKeluarga(@PathVariable("nkk") String nkk ,@ModelAttribute("keluargaForm") KeluargaFormModel keluargaForm, Model model) {
+	public String formUbahKeluarga(@PathVariable("nkk") String nkk, @Valid @ModelAttribute("keluargaForm") KeluargaFormModel keluargaForm, 
+			BindingResult bindingResult, Model model) {
+		
+		if(bindingResult.hasErrors()) {
+			return "form-tambah-keluarga";
+		}
 		
 		String newNkk = keluargaService.updateDataKeluarga(nkk, keluargaForm);
 		
