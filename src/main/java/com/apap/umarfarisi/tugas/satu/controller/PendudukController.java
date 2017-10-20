@@ -98,7 +98,7 @@ public class PendudukController {
 		boolean isWafat = pendudukService.updateDataStatusKematianPenduduk(nik);
 		model.addAttribute("wafat", isWafat);
 		model.addAttribute("nik", nik);
-		return "response-ubah-status-kematian-penduduk";
+		return "redirect:/penduduk?nik=" + nik;
 		
 	}
 
