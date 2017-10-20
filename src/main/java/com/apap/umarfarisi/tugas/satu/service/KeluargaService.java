@@ -51,6 +51,10 @@ public class KeluargaService {
 	
 	public String addDataKeluarga(KeluargaFormModel keluargaForm) {
 		
+		keluargaForm.setKota(keluargaForm.getKota().toUpperCase());
+		keluargaForm.setKecamatan(keluargaForm.getKecamatan().toUpperCase());
+		keluargaForm.setKelurahan(keluargaForm.getKelurahan().toUpperCase());
+		
 		KeluargaDBModel keluargaDB = new KeluargaDBModel();
 		keluargaDB.setAlamat(keluargaForm.getAlamat());
 
@@ -109,6 +113,10 @@ public class KeluargaService {
 
 	public String updateDataKeluarga(String nkk, KeluargaFormModel keluargaForm) {
 		
+		keluargaForm.setKota(keluargaForm.getKota().toUpperCase());
+		keluargaForm.setKecamatan(keluargaForm.getKecamatan().toUpperCase());
+		keluargaForm.setKelurahan(keluargaForm.getKelurahan().toUpperCase());
+		
 		KeluargaDBModel keluargaDB = new KeluargaDBModel();
 		keluargaDB.setAlamat(keluargaForm.getAlamat());
 		Long idKelurahan = kelurahanMappper.getIdKelurahan(keluargaForm.getKota(), keluargaForm.getKecamatan(), keluargaForm.getKelurahan());
@@ -120,6 +128,27 @@ public class KeluargaService {
 		keluargaDB.setTidakBerlaku(false);
 		
 		keluargaMapper.updateKeluarga(nkk, keluargaDB);
+		
+		//update penduduk
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				KeluargaFormModel olds = keluargaMapper.getKeluargaForm(nkk);
+				if(!keluargaForm.getKelurahan().equals(olds.getKelurahan()) || 
+						!keluargaForm.getKecamatan().equals(olds.getKecamatan()) ||
+						!keluargaForm.getKota().equals(olds.getKota())) {
+					
+					KeluargaDBModel keluargaDB = keluargaMapper.getKeluargaDB(nkk);
+					
+					List<PendudukDBModel> anggotaKeluarga = pendudukMapper.getAllPendudukByIdKeluarga(keluargaDB.getId());
+					
+					for(int i = 0 ; i < anggotaKeluarga.size() ; i++) {
+						//TODO
+					}
+					
+				}
+			}
+		}).start();
 		
 		//return newNkk from generate nkk
 		return keluargaDB.getNkk();

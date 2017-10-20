@@ -34,5 +34,9 @@ public interface KeluargaMapper {
 			+ "rw = '${keluargaDB.rw}', id_kelurahan = ${keluargaDB.idKelurahan}, is_tidak_berlaku = ${keluargaDB.tidakBerlaku} "
 			+ "where nomor_kk = ${nkk}")
 	public void updateKeluarga(@Param("nkk") String nkk, @Param("keluargaDB") KeluargaDBModel keluargaDB);
+
+	@Select("select id, nomor_kk as nkk, alamat, rt, rw, id_kelurahan as idKelurahan, is_tidak_berlaku as tidakBerlaku "
+			+ "from keluarga where nomor_kk = #{nkk}")
+	public KeluargaDBModel getKeluargaDB(@Param("nkk") String nkk);
 	
 }

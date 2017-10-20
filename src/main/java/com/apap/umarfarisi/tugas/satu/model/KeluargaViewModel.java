@@ -15,7 +15,7 @@ import lombok.ToString;
 @ToString
 public class KeluargaViewModel {
 	
-	private String id;
+	private long id;
 	private String nkk;
 	private String alamat;
 	private String rt;
