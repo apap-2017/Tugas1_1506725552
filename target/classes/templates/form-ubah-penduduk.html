@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<title>Tambah Penduduk</title>
+<title>Ubah Penduduk</title>
 </head>
 <body>
+
+	<h1>Ubah Penduduk</h1>
+
+	<h3 th:if="${error_id_keluarga}" ><font color="red" >id keluarga tidak ditemukan</font></h3>
 
 	<form th:action="@{/penduduk/ubah/} + ${pendudukForm.nik}" th:object="${pendudukForm}" method="post">
 		<h3>Masukkan Nama</h3>

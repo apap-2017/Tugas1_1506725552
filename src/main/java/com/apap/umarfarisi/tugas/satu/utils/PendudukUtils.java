@@ -8,6 +8,11 @@ import com.apap.umarfarisi.tugas.satu.mapper.PendudukMapper;
 public class PendudukUtils {
 	public static String generateNIK(KecamatanMapper kecamatanMapper, PendudukMapper pendudukMapper, long idKeluarga, String tanggalLahir, int jenisKelamin, String oldNik) {
 		String kodeKecamatan = kecamatanMapper.getKodeKecamatanByIdKeluarga(idKeluarga);
+		
+		if(kodeKecamatan == null || kodeKecamatan.equals("")) {
+			return null;
+		}
+		
 		String sixDigitFirst = kodeKecamatan.substring(0, kodeKecamatan.length() - 1);
 		
 		StringTokenizer tokenBirdDay = new StringTokenizer(tanggalLahir, "-");

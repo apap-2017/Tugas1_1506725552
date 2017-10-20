@@ -5,6 +5,10 @@
 </head>
 <body>
 
+	<h1>Tambah Penduduk</h1>
+	
+	<h3 th:if="${error_id_keluarga}" ><font color="red" >id keluarga tidak ditemukan</font></h3>
+
 	<form action="/penduduk/tambah" method="post" th:object="${pendudukForm}">
 		<h3>Masukkan Nama</h3>
 		<input type="text" th:field="*{nama}"/>

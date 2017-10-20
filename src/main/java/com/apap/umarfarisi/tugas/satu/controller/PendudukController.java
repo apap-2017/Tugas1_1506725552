@@ -43,6 +43,7 @@ public class PendudukController {
 	public String formTambahPenduduk(Model model) {
 		PendudukDBModel pendudukForm = new PendudukDBModel();
 		model.addAttribute("pendudukForm", pendudukForm);
+		
 		return "form-tambah-penduduk";
 		
 	}
@@ -57,6 +58,12 @@ public class PendudukController {
 		}
 		
 		String nik = pendudukService.addDataPenduduk(pendudukForm);
+		
+		if(nik == null) {
+			model.addAttribute("error_id_keluarga", true);
+			return "form-tambah-penduduk";
+		}
+		
 		model.addAttribute("nik", nik);
 		return "response-tambah-penduduk";
 	}
@@ -81,10 +88,15 @@ public class PendudukController {
 			@Valid @ModelAttribute("pendudukForm") PendudukDBModel pendudukForm,
 			BindingResult result) {
 		
-		String newNik = pendudukService.updateDataPenduduk(nik, pendudukForm);
-		
 		if(result.hasErrors()) {
 			return "form-ubah-penduduk";
+		}
+		
+		String newNik = pendudukService.updateDataPenduduk(nik, pendudukForm);
+		
+		if(newNik == null) {
+			model.addAttribute("error_id_keluarga", true);
+			return "form-tambah-penduduk";
 		}
 		
 		model.addAttribute("nik", newNik);
