@@ -84,7 +84,7 @@ public class PendudukController {
 		model.addAttribute("nik", nik);
 		
 		if(pendudukForm != null) {
-			model.addAttribute("status", pendudukForm.isWafat() ? "aktif" : "tidak aktif");
+			model.addAttribute("wafat", pendudukForm.isWafat());
 			return "form-ubah-status-kematian-penduduk";
 		}
 		
@@ -96,7 +96,7 @@ public class PendudukController {
 	public String formUbahStatusKematianPenduduk(Model model, @PathVariable(value = "nik") String nik) {
 		
 		boolean isWafat = pendudukService.updateDataStatusKematianPenduduk(nik);
-		model.addAttribute("status", isWafat ? "tidak aktif" : "aktif");
+		model.addAttribute("wafat", isWafat);
 		model.addAttribute("nik", nik);
 		return "response-ubah-status-kematian-penduduk";
 		
