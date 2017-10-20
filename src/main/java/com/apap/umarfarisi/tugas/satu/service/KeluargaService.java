@@ -118,9 +118,6 @@ public class KeluargaService {
 		keluargaDB.setRt(keluargaForm.getRt());
 		keluargaDB.setRw(keluargaForm.getRw());
 		keluargaDB.setTidakBerlaku(false);
-
-		System.out.println("::::::::::::::::::::::::::::::::: "+nkk);
-		System.out.println("::::::::::::::::::::::::::::::::: "+keluargaDB.toString());
 		
 		keluargaMapper.updateKeluarga(nkk, keluargaDB);
 		
@@ -138,11 +135,6 @@ public class KeluargaService {
 		
 		//uncomplete nkk which lack of 4 digit last
 		String nkk = sixDigitFirst + sixDigitSecond;
-
-		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> " + sixDigitSecond);
-		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> " + nkk.trim());
-		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> " + oldNkk.substring(0, nkk.length()).trim());
-		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> " + oldNkk.substring(0, nkk.length()).trim().equals(nkk.trim()));
 		
 		//no nkk change
 		if(oldNkk.substring(0, nkk.length()).trim().equals(nkk.trim())) {

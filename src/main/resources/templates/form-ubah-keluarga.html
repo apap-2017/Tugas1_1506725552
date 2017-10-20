@@ -5,19 +5,19 @@
 </head>
 <body>
 
-	<form th:action="@{/keluarga/ubah/} + ${nkk}" method="post" th:model = "keluargaForm">
+	<form th:action="@{/keluarga/ubah/} + ${nkk}" method="post" th:object = "${keluargaForm}">
 		<h3>Alamat</h3>
-		<input type="text" th:field="*{keluargaForm.alamat}"/>
+		<input type="text" th:field="*{alamat}"/>
 		<h3>RT</h3>
-		<input type="text" th:field="*{keluargaForm.rt}"/>
+		<input type="text" th:field="*{rt}"/>
 		<h3>RW</h3>
-		<input type="text" th:field="*{keluargaForm.rw}"/>
+		<input type="text" th:field="*{rw}"/>
 		<h3>Kelurahan/Desa</h3>
-		<input type="text" th:field="*{keluargaForm.kelurahan}"/>
+		<input type="text" th:field="*{kelurahan}"/>
 		<h3>Kecamatan</h3>
-		<input type="text" th:field="*{keluargaForm.kecamatan}"/>
+		<input type="text" th:field="*{kecamatan}"/>
 		<h3>Kota</h3>
-		<input type="text" th:field="*{keluargaForm.kota}"/>
+		<input type="text" th:field="*{kota}"/>
 		<div>
 			<button type="submit">SIMPAN</button>
 		</div>
