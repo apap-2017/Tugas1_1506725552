@@ -36,7 +36,8 @@ public class KeluargaController {
 	}
 	
 	@RequestMapping(value = "/keluarga/tambah" , method = RequestMethod.GET)
-	public String formTambahKeluarga(@ModelAttribute("keluargaForm") KeluargaFormModel keluargaFrom) {
+	public String formTambahKeluarga(Model model) {
+		model.addAttribute("keluargaForm", new KeluargaFormModel());
 		return "form-tambah-keluarga";
 	}
 	
