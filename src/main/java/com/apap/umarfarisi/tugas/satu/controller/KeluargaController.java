@@ -53,7 +53,13 @@ public class KeluargaController {
 			return "form-tambah-keluarga";
 		}
 		
-		String nkk = "";//keluargaService.addDataKeluarga(keluargaForm);
+		String nkk = keluargaService.addDataKeluarga(keluargaForm);
+		
+		if(nkk == null) {
+			model.addAttribute("error_nkk", true);
+			return "form-tambah-keluarga";
+		}
+		
 		model.addAttribute("nkk", nkk);
 		return "response-tambah-keluarga";
 	}
@@ -79,6 +85,11 @@ public class KeluargaController {
 		}
 		
 		String newNkk = keluargaService.updateDataKeluarga(nkk, keluargaForm);
+		
+		if(newNkk == null) {
+			model.addAttribute("error_nkk", true);
+			return "form-ubah-keluarga";
+		}
 		
 		model.addAttribute("nkk", newNkk);
 		return "response-ubah-keluarga";

@@ -56,11 +56,14 @@ public class KeluargaService {
 		keluargaForm.setKecamatan(keluargaForm.getKecamatan().toUpperCase());
 		keluargaForm.setKelurahan(keluargaForm.getKelurahan().toUpperCase());
 		
+		Long idKelurahan = kelurahanMappper.getIdKelurahan(keluargaForm.getKota(), keluargaForm.getKecamatan(), keluargaForm.getKelurahan());
+		
+		if(idKelurahan == null || idKelurahan == 0) {
+			return null;
+		}
+		
 		KeluargaDBModel keluargaDB = new KeluargaDBModel();
 		keluargaDB.setAlamat(keluargaForm.getAlamat());
-
-		
-		Long idKelurahan = kelurahanMappper.getIdKelurahan(keluargaForm.getKota(), keluargaForm.getKecamatan(), keluargaForm.getKelurahan());
 		
 		//TODO VALIDATION FORM , it is possible idKelurahan null which is not exit
 		
@@ -114,7 +117,11 @@ public class KeluargaService {
 
 	public String updateDataKeluarga(String nkk, final KeluargaFormModel keluargaForm) {
 		
+		Long idKelurahan = kelurahanMappper.getIdKelurahan(keluargaForm.getKota(), keluargaForm.getKecamatan(), keluargaForm.getKelurahan());
 		
+		if(idKelurahan == null || idKelurahan == 0) {
+			return null;
+		}
 		
 		/**
 		 * Change NIK anggota keluarga
@@ -144,7 +151,7 @@ public class KeluargaService {
 		
 		KeluargaDBModel keluargaDB = new KeluargaDBModel();
 		keluargaDB.setAlamat(keluargaForm.getAlamat());
-		Long idKelurahan = kelurahanMappper.getIdKelurahan(keluargaForm.getKota(), keluargaForm.getKecamatan(), keluargaForm.getKelurahan());
+		
 		//TODO VALIDATION FORM , it is possible idKelurahan null which is not exit
 		keluargaDB.setIdKelurahan(idKelurahan);
 		keluargaDB.setNkk(generateFromOldNKK(keluargaForm, nkk));

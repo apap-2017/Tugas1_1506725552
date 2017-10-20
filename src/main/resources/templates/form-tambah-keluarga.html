@@ -6,6 +6,8 @@
 <body>
 
 	<h1>Tambah Keluarga</h1>
+	
+	<h3 th:if="${error_nkk}" ><font color="red" >Kota/Kecamatan/Kelurahan tidak ditemukan</font></h3>
 
 	<form action="#" th:action="@{/keluarga/tambah}" method="post" th:object = "${keluargaForm}">
 		<h3>Alamat</h3>
