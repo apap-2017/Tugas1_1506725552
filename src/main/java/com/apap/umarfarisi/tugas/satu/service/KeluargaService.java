@@ -126,24 +126,30 @@ public class KeluargaService {
 		/**
 		 * Change NIK anggota keluarga
 		 */
-		KeluargaFormModel olds = keluargaMapper.getKeluargaForm(nkk);
-		if(!keluargaForm.getKelurahan().equals(olds.getKelurahan()) || 
-				!keluargaForm.getKecamatan().equals(olds.getKecamatan()) ||
-				!keluargaForm.getKota().equals(olds.getKota())) {
+		new Thread(new Runnable() {
 			
-			KeluargaDBModel newKeluargaDB = keluargaMapper.getKeluargaDB(nkk);
-			
-			List<PendudukDBModel> anggotaKeluargas = pendudukMapper.getAllPendudukByIdKeluarga(newKeluargaDB.getId());
-			
-			for(PendudukDBModel anggotaKeluarga : anggotaKeluargas) {
-				String oldNik = anggotaKeluarga.getNik();
-				String newNik = PendudukUtils.generateNIK(kecamatanMapper, pendudukMapper, anggotaKeluarga.getIdKeluarga(), 
-						anggotaKeluarga.getTanggalLahir(), anggotaKeluarga.getJenisKelamin(), anggotaKeluarga.getNik());
-				anggotaKeluarga.setNik(newNik);
-				pendudukMapper.updatePenduduk(oldNik, anggotaKeluarga);
+			@Override
+			public void run() {
+				KeluargaFormModel olds = keluargaMapper.getKeluargaForm(nkk);
+				if(!keluargaForm.getKelurahan().equals(olds.getKelurahan()) || 
+						!keluargaForm.getKecamatan().equals(olds.getKecamatan()) ||
+						!keluargaForm.getKota().equals(olds.getKota())) {
+					
+					KeluargaDBModel newKeluargaDB = keluargaMapper.getKeluargaDB(nkk);
+					
+					List<PendudukDBModel> anggotaKeluargas = pendudukMapper.getAllPendudukByIdKeluarga(newKeluargaDB.getId());
+					
+					for(PendudukDBModel anggotaKeluarga : anggotaKeluargas) {
+						String oldNik = anggotaKeluarga.getNik();
+						String newNik = PendudukUtils.generateNIK(kecamatanMapper, pendudukMapper, anggotaKeluarga.getIdKeluarga(), 
+								anggotaKeluarga.getTanggalLahir(), anggotaKeluarga.getJenisKelamin(), anggotaKeluarga.getNik());
+						anggotaKeluarga.setNik(newNik);
+						pendudukMapper.updatePenduduk(oldNik, anggotaKeluarga);
+					}
+				}
+				
 			}
-		}
-		
+		}).start();
 		
 		keluargaForm.setKota(keluargaForm.getKota().toUpperCase());
 		keluargaForm.setKecamatan(keluargaForm.getKecamatan().toUpperCase());
