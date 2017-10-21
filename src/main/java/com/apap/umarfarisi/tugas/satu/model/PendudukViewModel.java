@@ -1,7 +1,5 @@
 package com.apap.umarfarisi.tugas.satu.model;
 
-import java.util.Date;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
