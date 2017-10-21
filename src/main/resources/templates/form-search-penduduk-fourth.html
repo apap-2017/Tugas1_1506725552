@@ -18,16 +18,15 @@
 <h1>Lihat Data Penduduk Berdasarkan Kecamatan di Kota Jakarta Selatan</h1>
 
 	<h3>Kota</h3>
-	<input hidden="true" th:field="${kota.id}"></input>
-	<input th:value="${kota.namaKota}" ></input>
+	<span th:text="${kota.namaKota}" ></span>
 	<br/>
 	<h3>Kecamatan</h3>
-	<input hidden="true" th:field="${kecamatan.id}"></input>
-	<input th:value="${kecamatan.namaKecamatan}" ></input>
+	<span th:text="${kecamatan.namaKecamatan}" ></span>
 	<h3>Kelurahan</h3>
-	<input hidden="true" th:field="${kelurahan.id}"></input>
-	<input th:value="${kelurahan.namaKelurahan}" ></input>
-	
+	<span th:text="${kelurahan.namaKelurahan}" ></span>
+	<br/>
+	<br/>
+	<br/>
 	<table id="penduduk_table_id">
 		<thead>
 			<tr>

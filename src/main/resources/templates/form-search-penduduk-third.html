@@ -12,17 +12,19 @@
 	<div>		
 		<h3>Kota</h3>
 		<input hidden="true" th:name = "id_kota" th:value="${kota.id}"></input>
-		<input th:value="${kota.namaKota}" ></input>
+		<span th:text="${kota.namaKota}"></span>
 		<br/>
 		<h3>Kecamatan</h3>
 		<input hidden="true" th:name = "id_kecamatan" th:value="${kecamatan.id}"></input>
-		<input th:value="${kecamatan.namaKecamatan}" ></input>
+		<span th:text="${kecamatan.namaKecamatan}" ></span>
+		<br/>
 		<h3>Kelurahan</h3>
 		<select th:name="id_kelurahan">
 			<option th:text="${kelurahan.namaKelurahan}" th:value="${kelurahan.id}" th:each="kelurahan: ${kelurahans}">
 		</option>
 		</select>
 	</div>
+	<br/>
 	<div>
 		<button type="submit">Lihat</button>
 	</div>

@@ -16479,3 +16479,10 @@ java.lang.NumberFormatException: For input string: ""
 2017-10-21 02:03:22.620  INFO 5732 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
 2017-10-21 02:03:22.842  INFO 5732 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.637 seconds (JVM running for 7770.831)
 2017-10-21 02:03:23.934  INFO 5732 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-21 10:24:26.275  INFO 12976 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 12976 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-21 10:24:26.319  INFO 12976 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-21 10:24:27.470  INFO 12976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-21 10:24:27.471  INFO 12976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-21 10:24:27.522  INFO 12976 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-21 10:24:28.421  INFO 12976 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 2.349 seconds (JVM running for 2.946)
+2017-10-21 10:24:34.419  INFO 12976 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'

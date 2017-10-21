@@ -11,13 +11,15 @@
 	<div>
 		<h3>Kota</h3>
 		<input hidden="true" th:name = "id_kota" th:value="${kota.id}"></input>
-		<input th:value="${kota.namaKota}" ></input>
+		<span th:text="${kota.namaKota}"></span>
+		<br/>
 		<h3>Kecamatan</h3>
 		<select th:name="id_kecamatan">
 			<option th:text="${kecamatan.namaKecamatan}" th:value="${kecamatan.id}" th:each="kecamatan: ${kecamatans}">
 		</option>
 		</select>
 	</div>
+	<br/>
 	<div>
 		<button type="submit">Lihat</button>
 	</div>
