@@ -76,20 +76,28 @@ public class PendudukService {
 		
 		pendudukMapper.updatePenduduk(nik, pendudukForm);
 		
-		KeluargaDBModel keluarga = keluargaMapper.getKeluargaDBById(pendudukForm.getIdKeluarga());
-		List<PendudukDBModel> anggotaKeluargas = pendudukMapper.getAllPendudukByIdKeluarga(pendudukForm.getIdKeluarga());
-		
-		boolean conditionOfKeluarga = true;
-		
-		for(int i = 0 ; i < anggotaKeluargas.size() && conditionOfKeluarga ; i++) {
-			if(!anggotaKeluargas.get(i).isWafat()) {
-				conditionOfKeluarga = false;
+		new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+
+				KeluargaDBModel keluarga = keluargaMapper.getKeluargaDBById(pendudukForm.getIdKeluarga());
+				List<PendudukDBModel> anggotaKeluargas = pendudukMapper.getAllPendudukByIdKeluarga(pendudukForm.getIdKeluarga());
+				
+				boolean conditionOfKeluarga = true;
+				
+				for(int i = 0 ; i < anggotaKeluargas.size() && conditionOfKeluarga ; i++) {
+					if(!anggotaKeluargas.get(i).isWafat()) {
+						conditionOfKeluarga = false;
+					}
+				}
+				if(conditionOfKeluarga != keluarga.isTidakBerlaku()) {
+					keluarga.setTidakBerlaku(conditionOfKeluarga);
+					keluargaMapper.updateKeluarga(keluarga.getNkk(), keluarga);
+				}
+				
 			}
-		}
-		if(conditionOfKeluarga != keluarga.isTidakBerlaku()) {
-			keluarga.setTidakBerlaku(conditionOfKeluarga);
-			keluargaMapper.updateKeluarga(keluarga.getNkk(), keluarga);
-		}
+		}).start();
 		
 		return pendudukForm.isWafat();
 	}
