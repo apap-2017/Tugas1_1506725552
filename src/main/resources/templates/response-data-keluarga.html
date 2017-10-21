@@ -55,7 +55,6 @@
 	<table id="anggota_table_id">
 		<thead>
 			<tr>
-				<th>No</th>
 				<th>Nama Lengkap</th>
 				<th>NIK</th>
 				<th>Tempat Lahir</th>
@@ -67,11 +66,11 @@
 				<th>Status Perkawinan</th>
 				<th>Status Dalam Keluarga</th>
 				<th>Kewarganegaraan</th>
+				<th>Status</th>
 			</tr>
 		</thead>
 		<tbody>
-			<tr data-th-each = "anggotaKeluarga : ${keluarga.anggotaKeluargas}">
-				<td>1</td>
+			<tr data-th-each = "anggotaKeluarga,iterStat : ${keluarga.anggotaKeluargas}">
 				<td data-th-text="${anggotaKeluarga.nama}"></td>
 				<td data-th-text="${anggotaKeluarga.nik}"></td>
 				<td data-th-text="${anggotaKeluarga.tempatLahir}"></td>
@@ -83,6 +82,7 @@
 				<td data-th-text="${anggotaKeluarga.statusPerkawinan}"></td>
 				<td data-th-text="${anggotaKeluarga.statusDalamKeluarga}"></td>
 				<td data-th-text="${anggotaKeluarga.wni} ? 'WNI' : 'WNA'"></td>
+				<td data-th-text="${anggotaKeluarga.wafat} ? 'Meninggal' : 'Hidup'"></td>
 			</tr>
 		</tbody>
 	</table>
