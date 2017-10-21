@@ -12,6 +12,7 @@ import com.apap.umarfarisi.tugas.satu.mapper.KotaMapper;
 import com.apap.umarfarisi.tugas.satu.mapper.PendudukMapper;
 import com.apap.umarfarisi.tugas.satu.model.KecamatanDBModel;
 import com.apap.umarfarisi.tugas.satu.model.KeluargaDBModel;
+import com.apap.umarfarisi.tugas.satu.model.KeluargaStatus;
 import com.apap.umarfarisi.tugas.satu.model.KelurahanDBModel;
 import com.apap.umarfarisi.tugas.satu.model.KotaDBModel;
 import com.apap.umarfarisi.tugas.satu.model.PendudukDBModel;
@@ -74,26 +75,25 @@ public class PendudukService {
 		PendudukDBModel pendudukForm = pendudukMapper.getPendudukFrom(nik); //impossible null
 		pendudukForm.setWafat( !pendudukForm.isWafat() );
 		
-		pendudukMapper.updatePenduduk(nik, pendudukForm);
+		pendudukMapper.updateStatusKematianPenduduk(nik, pendudukForm.isWafat());
 		
 		new Thread(new Runnable() {
 			
 			@Override
 			public void run() {
 
-				KeluargaDBModel keluarga = keluargaMapper.getKeluargaDBById(pendudukForm.getIdKeluarga());
-				List<PendudukDBModel> anggotaKeluargas = pendudukMapper.getAllPendudukByIdKeluarga(pendudukForm.getIdKeluarga());
+				KeluargaStatus keluargaStatus = keluargaMapper.getStatusKeluarga(pendudukForm.getIdKeluarga());
+				List<Boolean> anggotaKeluargas = pendudukMapper.getAllStatusIsWafatPendudukByIdKeluarga(pendudukForm.getIdKeluarga());
 				
 				boolean conditionOfKeluarga = true;
 				
 				for(int i = 0 ; i < anggotaKeluargas.size() && conditionOfKeluarga ; i++) {
-					if(!anggotaKeluargas.get(i).isWafat()) {
+					if(!anggotaKeluargas.get(i)) {
 						conditionOfKeluarga = false;
 					}
 				}
-				if(conditionOfKeluarga != keluarga.isTidakBerlaku()) {
-					keluarga.setTidakBerlaku(conditionOfKeluarga);
-					keluargaMapper.updateKeluarga(keluarga.getNkk(), keluarga);
+				if(conditionOfKeluarga != keluargaStatus.isTidakBerlaku()) {
+					keluargaMapper.updateStatusBerlakuKeluarga(keluargaStatus.getNkk(), conditionOfKeluarga);
 				}
 				
 			}

@@ -8,6 +8,7 @@ import org.apache.ibatis.annotations.Update;
 
 import com.apap.umarfarisi.tugas.satu.model.KeluargaDBModel;
 import com.apap.umarfarisi.tugas.satu.model.KeluargaFormModel;
+import com.apap.umarfarisi.tugas.satu.model.KeluargaStatus;
 import com.apap.umarfarisi.tugas.satu.model.KeluargaViewModel;
 
 @Mapper
@@ -34,6 +35,10 @@ public interface KeluargaMapper {
 			+ "rw = '${keluargaDB.rw}', id_kelurahan = ${keluargaDB.idKelurahan}, is_tidak_berlaku = ${keluargaDB.tidakBerlaku} "
 			+ "where nomor_kk = ${nkk}")
 	public void updateKeluarga(@Param("nkk") String nkk, @Param("keluargaDB") KeluargaDBModel keluargaDB);
+	
+	@Update("update keluarga set is_tidak_berlaku = #{is_tidak_berlaku} "
+			+ "where nomor_kk = ${nkk}")
+	public void updateStatusBerlakuKeluarga(@Param("nkk") String nkk, @Param("is_tidak_berlaku") boolean isTidakBerlaku);
 
 	@Select("select id, nomor_kk as nkk, alamat, rt, rw, id_kelurahan as idKelurahan, is_tidak_berlaku as tidakBerlaku "
 			+ "from keluarga where nomor_kk = #{nkk}")
@@ -42,5 +47,9 @@ public interface KeluargaMapper {
 	@Select("select id, nomor_kk as nkk, alamat, rt, rw, id_kelurahan as idKelurahan, is_tidak_berlaku as tidakBerlaku "
 			+ "from keluarga where id = #{id_keluarga}")
 	public KeluargaDBModel getKeluargaDBById(@Param("id_keluarga") long idKeluarga);
+	
+	@Select("select nomor_kk as nkk, is_tidak_berlaku as tidakBerlaku "
+			+ "from keluarga where id = #{id_keluarga}")
+	public KeluargaStatus getStatusKeluarga(@Param("id_keluarga") long idKeluarga);
 	
 }

@@ -27,6 +27,9 @@ public interface PendudukMapper {
 			+ "from penduduk where id_keluarga = ${id_keluarga};")
 	public List<PendudukDBModel> getAllPendudukByIdKeluarga(@Param("id_keluarga") long idKeluarga);
 	
+	@Select("select is_wafat from penduduk where id_keluarga = ${id_keluarga};")
+	public List<Boolean> getAllStatusIsWafatPendudukByIdKeluarga(@Param("id_keluarga") long idKeluarga);
+	
 	@Insert("insert into penduduk (nik, nama, tempat_lahir, tanggal_lahir, jenis_kelamin, is_wni, id_keluarga, agama, pekerjaan, status_perkawinan, status_dalam_keluarga, golongan_darah, is_wafat) "
 			+ "VALUES ('${pendudukForm.nik}', '${pendudukForm.nama}', '${pendudukForm.tempatLahir}', '${pendudukForm.tanggalLahir}', ${pendudukForm.jenisKelamin}, ${pendudukForm.wni}, '${pendudukForm.idKeluarga}', "
 			+ "'${pendudukForm.agama}', '${pendudukForm.pekerjaan}', '${pendudukForm.statusPerkawinan}', '${pendudukForm.statusDalamKeluarga}', '${pendudukForm.golonganDarah}', ${pendudukForm.wafat});")
@@ -48,6 +51,10 @@ public interface PendudukMapper {
 			+ "status_dalam_keluarga = '${pendudukForm.statusDalamKeluarga}', golongan_darah = '${pendudukForm.golonganDarah}', is_wafat = ${pendudukForm.wafat} "
 			+ "where nik = #{nik}")
 	public void updatePenduduk(@Param("nik") String nik, @Param("pendudukForm") PendudukDBModel pendudukForm);
+	
+	@Update("update penduduk set is_wafat = #{is_wafat} "
+			+ "where nik = #{nik}")
+	public void updateStatusKematianPenduduk(@Param("nik") String nik, @Param("is_wafat") boolean isWafat);
 
 	@Select("select p.nik, p.nama, p.tempat_lahir as tempatLahir, p.tanggal_lahir as tanggalLahir, p.jenis_kelamin as jenisKelamin, "
 			+ "p.is_wni as wni, p.id_keluarga as idKeluarga, p.agama, p.pekerjaan, p.status_perkawinan as statusPerkawinan, "
