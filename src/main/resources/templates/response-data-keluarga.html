@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css"></link>
+
 <head>
 <title>Data Keluarga</title>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#anggota_table_id').dataTable();
+    });
+</script>
 </head>
 <body>
 
@@ -42,35 +52,39 @@
 	
 	<hr></hr>
 	
-	<table>
-		<tr>
-			<th>No</th>
-			<th>Nama Lengkap</th>
-			<th>NIK</th>
-			<th>Tempat Lahir</th>
-			<th>Tanggal Lahir</th>
-			<th>Agama</th>
-			<th>Jenis Kelamin</th>
-			<th>Golongan Darah</th>
-			<th>Pekerjaan</th>
-			<th>Status Perkawinan</th>
-			<th>Status Dalam Keluarga</th>
-			<th>Kewarganegaraan</th>
-		</tr>
-		<tr data-th-each = "anggotaKeluarga : ${keluarga.anggotaKeluargas}">
-			<td>1</td>
-			<td data-th-text="${anggotaKeluarga.nama}"></td>
-			<td data-th-text="${anggotaKeluarga.nik}"></td>
-			<td data-th-text="${anggotaKeluarga.tempatLahir}"></td>
-			<td data-th-text="${anggotaKeluarga.tanggalLahir}"></td>
-			<td data-th-text="${anggotaKeluarga.agama}"></td>
-			<td data-th-text="${anggotaKeluarga.jenisKelamin == 0} ? 'Pria' : 'Wanita'"></td>
-			<td data-th-text="${anggotaKeluarga.golonganDarah}"></td>
-			<td data-th-text="${anggotaKeluarga.pekerjaan}"></td>
-			<td data-th-text="${anggotaKeluarga.statusPerkawinan}"></td>
-			<td data-th-text="${anggotaKeluarga.statusDalamKeluarga}"></td>
-			<td data-th-text="${anggotaKeluarga.wni} ? 'WNI' : 'WNA'"></td>
-		</tr>
+	<table id="anggota_table_id">
+		<thead>
+			<tr>
+				<th>No</th>
+				<th>Nama Lengkap</th>
+				<th>NIK</th>
+				<th>Tempat Lahir</th>
+				<th>Tanggal Lahir</th>
+				<th>Agama</th>
+				<th>Jenis Kelamin</th>
+				<th>Golongan Darah</th>
+				<th>Pekerjaan</th>
+				<th>Status Perkawinan</th>
+				<th>Status Dalam Keluarga</th>
+				<th>Kewarganegaraan</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr data-th-each = "anggotaKeluarga : ${keluarga.anggotaKeluargas}">
+				<td>1</td>
+				<td data-th-text="${anggotaKeluarga.nama}"></td>
+				<td data-th-text="${anggotaKeluarga.nik}"></td>
+				<td data-th-text="${anggotaKeluarga.tempatLahir}"></td>
+				<td data-th-text="${anggotaKeluarga.tanggalLahir}"></td>
+				<td data-th-text="${anggotaKeluarga.agama}"></td>
+				<td data-th-text="${anggotaKeluarga.jenisKelamin == 0} ? 'Pria' : 'Wanita'"></td>
+				<td data-th-text="${anggotaKeluarga.golonganDarah}"></td>
+				<td data-th-text="${anggotaKeluarga.pekerjaan}"></td>
+				<td data-th-text="${anggotaKeluarga.statusPerkawinan}"></td>
+				<td data-th-text="${anggotaKeluarga.statusDalamKeluarga}"></td>
+				<td data-th-text="${anggotaKeluarga.wni} ? 'WNI' : 'WNA'"></td>
+			</tr>
+		</tbody>
 	</table>
 
 
