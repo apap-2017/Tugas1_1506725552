@@ -48,7 +48,7 @@ public interface PendudukMapper {
 
 	@Update("update penduduk set nik = ${pendudukForm.nik}, nama = '${pendudukForm.nama}', tempat_lahir = '${pendudukForm.tempatLahir}', tanggal_lahir = '${pendudukForm.tanggalLahir}', jenis_kelamin = ${pendudukForm.jenisKelamin},"
 			+ "is_wni = ${pendudukForm.wni}, id_keluarga = '${pendudukForm.idKeluarga}', agama = '${pendudukForm.agama}', pekerjaan = '${pendudukForm.pekerjaan}', status_perkawinan = '${pendudukForm.statusPerkawinan}', "
-			+ "status_dalam_keluarga = '${pendudukForm.statusDalamKeluarga}', golongan_darah = '${pendudukForm.golonganDarah}', is_wafat = ${pendudukForm.wafat} "
+			+ "status_dalam_keluarga = '${pendudukForm.statusDalamKeluarga}', golongan_darah = '${pendudukForm.golonganDarah}' "
 			+ "where nik = #{nik}")
 	public void updatePenduduk(@Param("nik") String nik, @Param("pendudukForm") PendudukDBModel pendudukForm);
 	

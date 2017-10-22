@@ -11,7 +11,6 @@ import com.apap.umarfarisi.tugas.satu.mapper.KelurahanMappper;
 import com.apap.umarfarisi.tugas.satu.mapper.KotaMapper;
 import com.apap.umarfarisi.tugas.satu.mapper.PendudukMapper;
 import com.apap.umarfarisi.tugas.satu.model.KecamatanDBModel;
-import com.apap.umarfarisi.tugas.satu.model.KeluargaDBModel;
 import com.apap.umarfarisi.tugas.satu.model.KeluargaStatus;
 import com.apap.umarfarisi.tugas.satu.model.KelurahanDBModel;
 import com.apap.umarfarisi.tugas.satu.model.KotaDBModel;
