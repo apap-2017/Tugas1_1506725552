@@ -16854,3 +16854,17 @@ java.lang.NumberFormatException: For input string: ""
 2017-10-22 13:02:03.851  WARN 5824 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'nik' is not present
 2017-10-22 13:02:12.343  WARN 5824 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'nik' is not present
 2017-10-22 13:03:40.967  WARN 5824 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'nik' is not present
+2017-10-22 23:20:46.603  INFO 7840 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7840 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-22 23:20:46.614  INFO 7840 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-22 23:20:47.829  INFO 7840 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-22 23:20:47.830  INFO 7840 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-22 23:20:47.880  INFO 7840 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-22 23:20:48.822  INFO 7840 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 2.409 seconds (JVM running for 2.969)
+2017-10-22 23:20:49.026  INFO 7840 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-22 23:27:15.715  INFO 7840 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Starting ApapUmarFarisiTugasSatuApplication on DESKTOP-LJUIIRO with PID 7840 (started by Asus in D:\MATKUL\Semester 5\Apap\Tugas\APAPTutorial04)
+2017-10-22 23:27:15.716  INFO 7840 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : No active profile set, falling back to default profiles: default
+2017-10-22 23:27:16.175  INFO 7840 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-22 23:27:16.175  INFO 7840 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-22 23:27:16.182  INFO 7840 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-22 23:27:16.469  INFO 7840 --- [restartedMain] u.t.s.ApapUmarFarisiTugasSatuApplication : Started ApapUmarFarisiTugasSatuApplication in 0.84 seconds (JVM running for 390.616)
+2017-10-22 23:27:54.364  INFO 7840 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
